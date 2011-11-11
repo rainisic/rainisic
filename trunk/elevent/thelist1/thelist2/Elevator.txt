@@ -1,0 +1,15 @@
+<HTML>
+<BODY>
+
+<CENTER>ЁЁ</CENTER>
+
+<CENTER>
+<H2>ЕчЬнФЃФтбнЪО</H2></CENTER>
+<marquee hspace=420 vspace=20 width=150 bgcolor=ffaaaa align=middle>
+
+<br>
+
+<CENTER><APPLET CODE="ElevatorMgr.class" WIDTH="445" HEIGHT="350"
+ALIGN="CENTER"></APPLET></CENTER>
+<CENTER>
+</BODY></HTML>
