@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.9" PIVersion="1.0.0.0" href="file:///D:\教学\软件项目实践\软件项目实践\文档模板\《项目开发计划》模板.xsn" name="urn:schemas-microsoft-com:office:infopath:-i-0AQB-Qo:" language="zh-cn" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><项目开发计划 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<首部 项目名称="电梯控制模拟系统" 项目标识="DT20110923" version="1.0">
+		<状态与版本信息>
+			<文件状态>正式发布</文件状态>
+			<文件标识>DTKF20110927</文件标识>
+			<当前版本>1.0.1</当前版本>
+			<作者>
+				<姓名>王正</姓名>
+				<学号>2008011271</学号>
+				<团队>Gelivable</团队>
+			</作者>
+			<完成日期>2011-09-30</完成日期>
+			<版本更新信息>Ver1.0.0正式发布，起止日期2011年9月29日至2011年9月30日，作者王正。</版本更新信息>
+		</状态与版本信息>
+		<引言>
+			<使用人员>本文档面向的使用人员为参加项目开发、测试、配置的全体人员。</使用人员>
+			<编写目的>该软件开发计划旨在定义软件的开发目的、开发计划、开发流程和预计的验收方式，并且指出整个开发过程中的预算。该文档将作为整个软件开发过程中的指导性文档面向参与软件开发的所有人员。</编写目的>
+			<背景>本项目名称为《电梯控制模拟系统》，项目任务的提出者为KGN电梯有限公司，开发者为Gelivable有限公司，最终用户为KGN电梯有限公司及电梯使用者 。该软件系统属于独立性软件，与其他软件或机构没有相互来往关系。</背景>
+			<定义与缩写>
+				<术语>SECS</术语>
+				<解释><span class="highlight" space="space" rightZone="0|12" leftZone="0|12" xmlns="http://www.w3.org/1999/xhtml">电梯模拟控制系统：Simulated elevator</span><span class="" space="0| " rightZone="12|12" leftZone="12|12" xmlns="http://www.w3.org/1999/xhtml"> control system</span></解释>
+			</定义与缩写>
+			<参考资料>
+				<条目>无</条目>
+			</参考资料>
+		</引言>
+	</首部>
+	<项目概述>
+		<工作内容><div xmlns="http://www.w3.org/1999/xhtml">1.系统及项目规划</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.需求分析及测评</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.概要设计</div>
+<div xmlns="http://www.w3.org/1999/xhtml">4.模块设计</div>
+<div xmlns="http://www.w3.org/1999/xhtml">5.算法设计</div>
+<div xmlns="http://www.w3.org/1999/xhtml">6.系统集成</div>
+<div xmlns="http://www.w3.org/1999/xhtml">7.集成测试</div>
+<div xmlns="http://www.w3.org/1999/xhtml">8.验收测试及文档补完</div>
+<div xmlns="http://www.w3.org/1999/xhtml">9.提交产品</div></工作内容>
+		<主要参加人员><div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">项目经理<font face="SimSun">：王正（</font>军工软件开发经验）</div>
+<div xmlns="http://www.w3.org/1999/xhtml">开发组:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">开发组长：吴凝（企业及政府软件开发经验）</div>
+<div xmlns="http://www.w3.org/1999/xhtml">开发组成员：李腾,理想,程曦,闫晨辉</div>
+<div xmlns="http://www.w3.org/1999/xhtml">测试组:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">测试组组长:刘建</div>
+<div xmlns="http://www.w3.org/1999/xhtml">测试组成员:姚梦森,喻钦翼,李迪,倪硕,魏阳,李子恒</div>
+<div xmlns="http://www.w3.org/1999/xhtml">配置组:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">配置组组长:赵鹏</div></主要参加人员>
+		<产品>
+			<程序><div xmlns="http://www.w3.org/1999/xhtml"><font face="SimSun">电梯模拟调度系统V1.0</font></div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div></程序>
+			<文件>产品使用说明书：包括产品的功能规格，特点，使用方法以及注意事项。</文件>
+			<服务>本公司对于使用本公司产品的用户实行免费的安装和培训服务，具体时间将在项目完成并通过验收后的3个工作日之内完成。</服务>
+			<非移交的产品><div xmlns="http://www.w3.org/1999/xhtml">1.除软件产品使用说明书外的一切开发文档。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">包括:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;软件过程定义&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;质保计划&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;配置管理计划&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;项目计划&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;软件需求说明书&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;设计说明书&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;概要设计文档&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;详细设计文档&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;项目总结&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.所有的测试用例以及除验收测试报告外的测试文档。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">包括:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;测试计划&gt;</div>
+<div xmlns="http://www.w3.org/1999/xhtml">&lt;测试案例&gt;</div></非移交的产品>
+		</产品>
+		<验收标准><div xmlns="http://www.w3.org/1999/xhtml">产品使用说明书:根据国家标准,详细完善的说明了软件的结构,需求的硬件配置以及详细的使用方法,包括对于用户危险操作的警告及软件本身应用范围的说明.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">测试报告:详细说明对软件的测试所进行的所有的测试案例的结果和数据的统计,并完整的说明了软件在测试过程中出现的问题及最终的测试总结.</div></验收标准>
+		<完成项目的最迟期限>2011-12-16</完成项目的最迟期限>
+	</项目概述>
+	<实施计划>
+		<角色定义及分配><div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">1.系统规划：王正(项目经理),李腾(系统分析师),吴凝(开发组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">1.1项目规划：王正(项目经理),吴凝(开发组长),李腾(系统分析师)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">1.2计划评审：王正(项目经理)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.需求开发：王正(项目经理),吴凝(开发组长),李腾(系统分析师),赵鹏</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.1用户需求获取：王正(项目经理),吴凝(开发组长),李腾(系统分析师),赵鹏</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.2需求分析及编写用户需求分析书：吴凝(开发组长),李腾(系统分析师),赵鹏</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.3需求评审：王正(项目经理)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.设计：王正(项目经理),李腾(系统分析师),李想,程曦,闫晨辉,吴凝(开发组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.1概要设计：吴凝(开发组长),李腾(系统分析师)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.2模块设计：李想,闫晨辉</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.3算法设计：吴凝(开发组长),程曦</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.4设计评审：王正(项目经理),吴凝(开发组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">4.实现：李腾(系统分析师),李想,程曦,闫晨辉,吴凝(开发组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">5.测试：王正(项目经理),刘建(测试组长),姚梦森,喻钦翼,李迪,倪硕,魏阳,李子恒</div>
+<div xmlns="http://www.w3.org/1999/xhtml">5.1集成测试：刘建(测试组长),姚梦森,喻钦翼</div>
+<div xmlns="http://www.w3.org/1999/xhtml">5.2系统测试：李迪,倪硕,魏阳,李子恒</div>
+<div xmlns="http://www.w3.org/1999/xhtml">5.3验收测试：刘建(测试组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">5.4测试评审：王正(项目经理),刘建(测试组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">6.提交产品：王正(项目经理)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">6.1用户使用说明书:王正(项目经理),吴凝(开发组长),刘建(测试组长)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">6.2验收:KGN电梯有限公司代表</div>
+<div xmlns="http://www.w3.org/1999/xhtml">6.3技术培训:吴凝(开发组长),刘建(测试组长)</div>
+<div align="center" xmlns="http://www.w3.org/1999/xhtml"> </div></角色定义及分配>
+		<过程域方法与工具><div xmlns="http://www.w3.org/1999/xhtml">项目管理：Gantt 图，使用工具：<span>Microsoft Project</span><span>。</span></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><span>需求分析：业务流程图、数据流图和功能层次图，使用工具：<span><span>Microsoft Office Visio。</span></span></span></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><span><span><span>设计：面向对象设计类图等，使用工具：<span>Rational Rose。</span></span></span></span></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><span><span><span><span>实现：使用<span>Eclipse 进行开发调试及实现。</span></span></span></span></span></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><span><span><span><span><span>测试：使用QT进行所有测试管理和案例工作。</span></span></span></span></span></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><span><span><span><span><span>软件版本管理：使用SVN进行软件版本管理</span></span></span></span></span></div></过程域方法与工具>
+		<任务与进度>
+			<任务与进度计划><div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div align="center" xmlns="http://www.w3.org/1999/xhtml">
+<table style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 608px; BORDER-COLLAPSE: collapse; WORD-WRAP: break-word; TABLE-LAYOUT: fixed; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="MsoNormalTable msoUcTable" tabIndex="-1" border="1" cellPadding="0">
+<colgroup>
+<col style="WIDTH: 133px"/>
+<col style="WIDTH: 109px"/>
+<col style="WIDTH: 118px"/>
+<col style="WIDTH: 102px"/>
+<col style="WIDTH: 146px"/></colgroup>
+<tbody>
+<tr style="MIN-HEIGHT: 18px">
+<td vAlign="top" bgColor="#d9d9d9" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10.5pt" align="center"><span><strong>任务名称</strong></span></div></td>
+<td vAlign="top" bgColor="#d9d9d9" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10.5pt" align="center"><span><strong>起始时间</strong></span></div></td>
+<td vAlign="top" bgColor="#d9d9d9" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10.5pt" align="center"><span><strong>结束时间</strong></span></div></td>
+<td vAlign="top" bgColor="#d9d9d9" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10.5pt" align="center"><span><strong>资源</strong></span></div></td>
+<td vAlign="top" bgColor="#d9d9d9" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10.5pt" align="center"><span><strong>预期工作成果</strong></span></div></td></tr>
+<tr style="MIN-HEIGHT: 19px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">电梯模拟控制系统系统</font></span><span></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr style="MIN-HEIGHT: 16px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">系统规划</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-10</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-13</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),李腾(系统分析师),吴凝(开发组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">项目规划</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-10</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-12</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),吴凝(开发组长),李腾(系统分析师)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">项目计划</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">计划评审</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-12</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-13</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">项目计划评审报告</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">需求开发</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-17</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-21</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),吴凝(开发组长),李腾(系统分析师),赵鹏</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr style="MIN-HEIGHT: 16px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">用户需求获取</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-10-17</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-19</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),吴凝(开发组长),李腾(系统分析师),赵鹏</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">用户需求报告</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 31px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">需求分析及编写需求规格说明书</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-19</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-20</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>吴凝(开发组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">需求规格说明书</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 14px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">需求评审</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-20</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-21</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">需求规格说明书评审报告</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 14px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">设计</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-24</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-29</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),李腾(系统分析师),李想,程曦,闫晨辉,吴凝(开发组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">概要设计</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-24</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-26</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>吴凝(开发组长),李腾(系统分析师)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">概要设计说明书</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 19px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">模块设计</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-27</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-28</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>李想,闫晨辉</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">模块设计说明书</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 19px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">算法设计</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-27</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-28</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>吴凝(开发组长),程曦</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">设计评审</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-28</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-29</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),吴凝(开发组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">设计评审报告</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">实现</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-10-31</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>2011-11-11</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>李腾(系统分析师),李想,程曦,闫晨辉,吴凝(开发组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">测试</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-14</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-21</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">王正(项目经理),刘建(测试组长),姚梦森,喻钦翼,李迪,倪硕,魏阳,李子恒</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">集成测试</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-14</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-16</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>刘建(测试组长),姚梦森,喻钦翼</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">集成测试计划、案例及测试报告</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">系统测试</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-16</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-18</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>李迪,倪硕,魏阳,李子恒</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">系统测试计划、案例及测试报告</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">验收测试</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-18</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-19</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>刘建(测试组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">验收测试计划及测试报告</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 14px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">测试评审</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-20</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-21</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),刘建(测试组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">测试评审报告</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">提交</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-24</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr>
+<tr style="MIN-HEIGHT: 14px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">完成文档</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-24</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-28</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">所有应提交的文档</font></span></div></td></tr>
+<tr>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">验收</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-28</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">验收报告</font></span></div></td></tr>
+<tr style="MIN-HEIGHT: 16px">
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体">技术培训</font></span></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体">2011-11-28</font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span></span></font> </div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><font face="宋体"><span>王正(项目经理),吴凝(开发组长),刘建(测试组长)</span></font></div></td>
+<td vAlign="top" style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid">
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="center"><span><font face="宋体"></font></span> </div></td></tr></tbody></table></div></任务与进度计划>
+			<甘特图><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="Times New Roman"><img style="WIDTH: 499px; HEIGHT: 679px" tabIndex="-1" src="msoinline/8c93a47173d45c1" width="499" height="679" v:shapes="_x0000_i1025" xd:inline="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" xmlns:v="urn:v"/> </font></span></甘特图>
+		</任务与进度>
+		<预算><div xmlns="http://www.w3.org/1999/xhtml">
+<table style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 433px; BORDER-COLLAPSE: collapse; WORD-WRAP: break-word; TABLE-LAYOUT: fixed; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="msoUcTable" tabIndex="-1" border="1" borderColor="buttontext">
+<colgroup>
+<col style="WIDTH: 77px"/>
+<col style="WIDTH: 170px"/>
+<col style="WIDTH: 74px"/>
+<col style="WIDTH: 38px"/>
+<col style="WIDTH: 74px"/></colgroup>
+<tbody vAlign="top">
+<tr>
+<td>
+<div><font size="2" face="宋体">序号</font></div></td>
+<td>
+<div><font size="2" face="宋体">材料</font></div></td>
+<td>
+<div><font size="2" face="宋体">单价（元）</font></div></td>
+<td>
+<div><font size="2" face="宋体">个数</font></div></td>
+<td>
+<div><font size="2" face="宋体">总计（元）</font></div></td></tr>
+<tr style="MIN-HEIGHT: 17px">
+<td>
+<div><font size="2" face="宋体">1</font></div></td>
+<td>
+<div><font size="2" face="宋体">个人计算机</font></div></td>
+<td>
+<div><font size="2" face="宋体">8,000</font></div></td>
+<td>
+<div><font size="2" face="宋体">14</font></div></td>
+<td>
+<div><font size="2" face="宋体"></font>128,000</div></td></tr>
+<tr style="MIN-HEIGHT: 17px">
+<td>
+<div><font size="2" face="宋体">2</font></div></td>
+<td>
+<div><font size="2" face="宋体">Windows 7 旗舰版系统</font></div></td>
+<td><span class="Apple-style-span">
+<div><font size="2" face="宋体">2,460</font></div></span><!--EndFragment--></td>
+<td>
+<div><font size="2" face="宋体">14</font></div></td>
+<td>39,360</td></tr>
+<tr style="MIN-HEIGHT: 17px">
+<td>
+<div><font size="2" face="宋体">3</font></div></td>
+<td>
+<div><font size="2" face="宋体">QuickTestPro</font></div></td>
+<td><span class="Apple-style-span">
+<div><font size="2" face="宋体">200,000</font></div></span></td>
+<td>
+<div><font size="2" face="宋体">1</font></div></td>
+<td>
+<div><font size="2" face="宋体">20,000</font></div></td></tr></tbody></table></div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">人员共14人</div>
+<div xmlns="http://www.w3.org/1999/xhtml">项目经理:5000元/人月</div>
+<div xmlns="http://www.w3.org/1999/xhtml">项目组长:4000元/人月</div>
+<div xmlns="http://www.w3.org/1999/xhtml">系统分析师:4000元/人月</div>
+<div xmlns="http://www.w3.org/1999/xhtml">普通开发人员:3000元/人月</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">其他费用(差旅,车船,器械损耗等):10,000元</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">总计:710.000元</div></预算>
+		<关键问题><div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">1.电梯调度的算法设计：调度的算法设计直接关系到产品的运行效率及工作能力，是项目设计中的重点。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.软件产品与硬件设备的对接：由于本项目为纯软件项目，与硬件设备的对接是十分重要的。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.用户的培训：软件需要有良好的可操作性以及人机交互能力，否则会为产品的使用人员带来麻烦。</div></关键问题>
+	</实施计划>
+	<支持条件>
+		<计算机系统支持><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="justify"><font face="宋体">服务器端子系统的运行要求：</font></li></ul>
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="justify" xmlns="http://www.w3.org/1999/xhtml"><font face="undefined">    <font face="宋体">系统软件：</font> Window 2000/XP</font></div>
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="justify" xmlns="http://www.w3.org/1999/xhtml"><font face="undefined">    <font face="宋体">硬件要求：</font>Pentium III 450<font face="宋体">以上</font>, 256M RAM,  40G HD</font></div>
+<div style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt" align="justify" xmlns="http://www.w3.org/1999/xhtml">       </div>
+<div xmlns="http://www.w3.org/1999/xhtml"><font style="FONT-SIZE: 10.5pt" face="undefined"><font style="FONT-SIZE: 10.5pt"><font style="FONT-SIZE: 10.5pt" face="宋体">    系统软件：</font> Window 2000/XP</font></font></div></计算机系统支持>
+		<需由用户承担的工作><div xmlns="http://www.w3.org/1999/xhtml">用户需在需求分析阶段详细的向我公司需求分析人员说明项目的要求，条件以及工期等项目规格。</div></需由用户承担的工作>
+		<由外单位提供的条件>本项目无外包内容</由外单位提供的条件>
+	</支持条件>
+	<专题计划要点><div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div></专题计划要点>
+</项目开发计划>

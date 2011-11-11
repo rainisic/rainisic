@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.3" PIVersion="1.0.0.0" href="file:///D:\教学\软件项目实践\软件项目实践\文档模板\《质量保证计划》模板.xsn" name="urn:schemas-microsoft-com:office:infopath:-X-M1QB-Qo:" language="zh-cn" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><质量保证计划 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<首部 项目名称="电梯控制模拟系统" 项目标识="DT20110923" version="1.0">
+		<状态与版本信息>
+			<文件状态>正式发布</文件状态>
+			<文件标识>DTZB20110927</文件标识>
+			<当前版本>1.0.1</当前版本>
+			<作者>
+				<姓名>喻钦翼</姓名>
+				<学号>2008011275</学号>
+				<团队>Gellivable</团队>
+			</作者>
+			<完成日期>2011-10-10</完成日期>
+			<版本更新信息>初版更新,作者喻钦翼</版本更新信息>
+		</状态与版本信息>
+		<引言>
+			<使用人员>软件开发人员，软件测试人员，软件管理人员，质量保证人员</使用人员>
+			<编写目的><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">本计划的目的在于对所开发的</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="Times New Roman">电梯控制模拟系统</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">软件规定各种必要的质量保证措施，以保证所交付的</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="Times New Roman">电控制梯模拟系统</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">软件能够满足项目委托书或合同中规定的各项需求，能够满足本项目总体组制定的且经领导小组批准的该软件系统需求规格说明书中规定的各项具体需求。</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="Times New Roman"><br/></font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">软件开发单位在开发</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="Times New Roman">电梯控制模拟</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">软件系统所属的各个子系统（其中包括为本项目研制或选用的各种支持软件）时，都应该报告本计划中的有关规定，但可根据各自的情况对酊计划作适当的剪裁，以满足特定的质量保证要求，剪裁后的计划必须经总体组批准。</font></span><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="Times New Roman"><br/><br/></font></span></编写目的>
+			<背景>针对电梯的调度，管理所生成的调度软件产品，为了保证其开发过程顺利，有序，高效的进行，保证该软件产品的质量达到客户的要求，规定专门的质量措施、资源和活动顺序</背景>
+			<定义与缩写>
+				<术语>QA</术语>
+				<解释>质量保证</解释>
+			<术语>CM</术语><解释>配置管理</解释></定义与缩写>
+			<参考资料>
+				<条目></条目>
+			</参考资料>
+		</引言>
+	</首部>
+	<过程与产品质量检查计划>
+		
+	<过程域>
+									<名称>系统规划</名称>
+									<工作成果><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">软件项目计划、配置管理计划、质量保证计划</font></span></工作成果>
+									<检查时间>2011-10-14</检查时间>
+									<质保人员>王正</质保人员>
+									<检查人员>刘健</检查人员>
+								</过程域><过程域>
+									<名称>需求开发</名称>
+									<工作成果><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">需求规格说明书</font></span></工作成果>
+									<检查时间>2011-10-21</检查时间>
+									<质保人员>李腾</质保人员>
+									<检查人员>刘健</检查人员>
+								</过程域><过程域>
+									<名称>设计</名称>
+									<工作成果><span style="FONT-SIZE: 10.5pt" xmlns="http://www.w3.org/1999/xhtml"><font face="宋体"><span style="FONT-SIZE: 10.5pt"><font face="宋体">概要设计说明书、数据库设计说明书、模块设计说明书</font></span>）</font></span></工作成果>
+									<检查时间>2011-10-28</检查时间>
+									<质保人员>吴凝</质保人员>
+									<检查人员>刘健</检查人员>
+								</过程域><过程域>
+									<名称>实现</名称>
+									<工作成果><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">产品代码（源程序）</font></span></工作成果>
+									<检查时间>2011-12-02</检查时间>
+									<质保人员>吴凝</质保人员>
+									<检查人员>刘健</检查人员>
+								</过程域><过程域>
+									<名称>系统集成</名称>
+									<工作成果><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">测试报告</font></span></工作成果>
+									<检查时间>2011-12-16</检查时间>
+									<质保人员>喻钦翼，刘健，姚梦森</质保人员>
+									<检查人员>李迪</检查人员>
+								</过程域><过程域>
+									<名称>提交</名称>
+									<工作成果><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10.5pt"><font face="宋体">验收报告</font></span></工作成果>
+									<检查时间>2011-12-16</检查时间>
+									<质保人员>喻钦翼，刘健，姚梦森</质保人员>
+									<检查人员>闫晨辉</检查人员>
+								</过程域></过程与产品质量检查计划>
+	<技术评审计划>
+		<评审内容>
+			<名称>软件项目计划</名称>
+			<方式>FTR</方式>
+			<评审时间>2011-10-12</评审时间>
+			<质保人员>吴凝</质保人员>
+			<评审人员>刘健</评审人员>
+		</评审内容>
+	<评审内容>
+									<名称>配置管理计划</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-10-12</评审时间>
+									<质保人员>赵鹏</质保人员>
+									<评审人员>喻钦翼</评审人员>
+								</评审内容><评审内容>
+									<名称>质量保证计划</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-10-12</评审时间>
+									<质保人员>喻钦翼</质保人员>
+									<评审人员>姚梦森</评审人员>
+								</评审内容><评审内容>
+									<名称>需求规格说明书</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-10-26</评审时间>
+									<质保人员>李腾</质保人员>
+									<评审人员>李迪</评审人员>
+								</评审内容><评审内容>
+									<名称>概要设计说明书</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-11-02</评审时间>
+									<质保人员>李腾</质保人员>
+									<评审人员>闫晨辉</评审人员>
+								</评审内容><评审内容>
+									<名称>模块设计说明书</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-11-09</评审时间>
+									<质保人员>吴凝</质保人员>
+									<评审人员>倪硕</评审人员>
+								</评审内容><评审内容>
+									<名称>核心控制模块</名称>
+									<方式>ITR</方式>
+									<评审时间>2011-11-09</评审时间>
+									<质保人员>吴凝</质保人员>
+									<评审人员>刘健</评审人员>
+								</评审内容><评审内容>
+									<名称>模拟显示模块</名称>
+									<方式>ITR</方式>
+									<评审时间>2011-11-09</评审时间>
+									<质保人员>吴凝</质保人员>
+									<评审人员>喻钦翼</评审人员>
+								</评审内容><评审内容>
+									<名称>集成测试报告</名称>
+									<方式>ITR</方式>
+									<评审时间>2011-12-10</评审时间>
+									<质保人员>倪硕</质保人员>
+									<评审人员>姚梦森</评审人员>
+								</评审内容><评审内容>
+									<名称>系统测试报告</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-12-12</评审时间>
+									<质保人员>倪硕</质保人员>
+									<评审人员>李迪</评审人员>
+								</评审内容><评审内容>
+									<名称>验收测试报告</名称>
+									<方式>FTR</方式>
+									<评审时间>2011-12-15</评审时间>
+									<质保人员>倪硕</质保人员>
+									<评审人员>闫晨辉</评审人员>
+								</评审内容></技术评审计划>
+	<产品测试计划>
+		
+	<测试内容>
+									<测试类型>单元测试</测试类型>
+									<测试时间>2011-12-09</测试时间>
+									<测试计划><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 12pt"><font face="宋体">单元测试计划</font></span></测试计划>
+									<质保人员>刘健</质保人员>
+									<测试人员>刘健，喻钦翼，姚梦森</测试人员>
+								</测试内容><测试内容>
+									<测试类型>集成测试</测试类型>
+									<测试时间>2011-12-11</测试时间>
+									<测试计划><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 12pt"><font face="宋体">集成测试计划</font></span></测试计划>
+									<质保人员>喻钦翼</质保人员>
+									<测试人员>李迪，闫晨辉，倪硕</测试人员>
+								</测试内容><测试内容>
+									<测试类型>系统测试</测试类型>
+									<测试时间>2011-12-13</测试时间>
+									<测试计划><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 12pt"><font face="宋体">系统测试计划</font></span></测试计划>
+									<质保人员>姚梦森</质保人员>
+									<测试人员>刘健，喻钦翼，姚梦森</测试人员>
+								</测试内容><测试内容>
+									<测试类型>验收测试</测试类型>
+									<测试时间>2011-12-14</测试时间>
+									<测试计划><span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 12pt"><font face="宋体">验收测试计划</font></span></测试计划>
+									<质保人员>李迪</质保人员>
+									<测试人员>李迪，闫晨辉，倪硕</测试人员>
+								</测试内容></产品测试计划>
+	<质量目标><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" start="1">
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li><span style="FONT-SIZE: 12pt"><font face="宋体">根据本项目的特点，制定项目的总体质量目标如下：</font></span><span style="FONT-SIZE: 12pt"></span></li></ul>
+<li style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; FONT-SIZE: 10.5pt; MARGIN-BOTTOM: 0pt; LINE-HEIGHT: 150%" align="justify"><span style="FONT-SIZE: 12pt"></span><span style="FONT-SIZE: 12pt"><font face="宋体">基于需求的测试覆盖率为100%。</font></span></li>
+<li style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; FONT-SIZE: 10.5pt; MARGIN-BOTTOM: 0pt; LINE-HEIGHT: 150%" align="justify"><span style="FONT-SIZE: 12pt"></span><span style="FONT-SIZE: 12pt"><font face="宋体">软件功能测试用例通过率不低于95%。</font></span></li>
+<li style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; FONT-SIZE: 10.5pt; MARGIN-BOTTOM: 0pt; LINE-HEIGHT: 150%" align="justify"><span style="FONT-SIZE: 12pt"></span><span style="FONT-SIZE: 12pt"><font face="宋体">每个阶段评审中发现的问题都已解决或等到妥善处理。</font></span></li>
+<li style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; FONT-SIZE: 10.5pt; MARGIN-BOTTOM: 0pt; LINE-HEIGHT: 150%" align="justify"><span style="FONT-SIZE: 12pt"></span><span style="FONT-SIZE: 12pt"><font face="宋体">产品验收时不存在严重问题及缺陷。</font></span><span style="FONT-SIZE: 12pt"></span></li></ul>
+<div xmlns="http://www.w3.org/1999/xhtml" style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; FONT-SIZE: 10.5pt; MARGIN-BOTTOM: 0pt; LINE-HEIGHT: 150%" align="justify"><span style="FONT-SIZE: 12pt"><font face="宋体">注：严重问题指导致系统或功能模块不能正常工作的问题。</font></span><span style="FONT-SIZE: 12pt"></span></div></质量目标>
+	<质量保证活动><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 18pt; MARGIN-BOTTOM: 4pt; TEXT-INDENT: -18pt" align="justify"><span style="FONT-SIZE: 12pt"><font face="宋体">正式技术评审（FTR）采用评审会议形式；非正式技术评审（ITR）采用文件传阅形式。正式技术评审必须形成评审记录。质量保证人员将发现的问题和解决情况在例会上通报，对未解决的问题进行讨论，对不能解决的问题提交项目经理。</font></span></li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 18pt; MARGIN-BOTTOM: 4pt; TEXT-INDENT: -18pt" align="justify"><font size="3"><span style="FONT-SIZE: 12pt"><font face="宋体">每个周末，进行一次例会，对配置管理进行审核，确认配置管理工作是否正常进行。</font></span></font></li></ul></ul></质量保证活动>
+	<记录的收集维护和保存><div xmlns="http://www.w3.org/1999/xhtml" style="PADDING-RIGHT: 0cm; MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; FONT-SIZE: 10.5pt; MARGIN-BOTTOM: 0pt; LINE-HEIGHT: 150%" align="justify"><span style="FONT-SIZE: 12pt"><font face="宋体">项目组应当保留项目执行过程中形成的各类文档、周报、会议记录，对重要文档质量保证人员定期进行审计。</font></span><span style="FONT-SIZE: 12pt"></span></div></记录的收集维护和保存>
+</质量保证计划>
