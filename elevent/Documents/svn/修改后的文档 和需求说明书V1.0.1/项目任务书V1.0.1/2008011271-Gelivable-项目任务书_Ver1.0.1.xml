@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.4" PIVersion="1.0.0.0" href="file:///D:\教学\软件项目实践\软件项目实践\文档模板\《任务书》模板.xsn" name="urn:schemas-microsoft-com:office:infopath:-kQV-Qo:" language="zh-cn" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><任务书 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<首部 项目名称="电梯控制模拟系统" 项目标识="DT20110923" version="1.0">
+		<状态与版本信息>
+			<文件状态></文件状态>
+			<文件标识></文件标识>
+			<当前版本></当前版本>
+			<作者>
+				<姓名>王正</姓名>
+				<学号>2008011271</学号>
+				<团队>Gelivable</团队>
+			</作者>
+			<完成日期></完成日期>
+			<版本更新信息></版本更新信息>
+		</状态与版本信息>
+		<引言>
+			<使用人员></使用人员>
+			<编写目的></编写目的>
+			<背景></背景>
+		</引言>
+	</首部>
+	<下达人>KNG电梯有限公司代表</下达人>
+	<下达时间>2011-09-30</下达时间>
+	<项目经理>王正</项目经理>
+	<项目计划提交期限>2011-09-30</项目计划提交期限>
+	<送达人>Gelivable团队项目经理</送达人>
+	<项目目标>
+		<目标条目>模拟实现电梯控制系统，本系统可以操作2台以上电梯。</目标条目><目标条目>电梯操作人性化，简单方便，同时考虑到特殊群体的情况进行特别的设计。</目标条目><目标条目>电梯发生故障有紧急处理方法，电梯的安全性符合国际标准。</目标条目>
+	</项目目标>
+	<项目范围>
+		<项目性质/>
+		<项目组成><div xmlns="http://www.w3.org/1999/xhtml">本项目由电梯模拟调度系统及电梯调度模拟场景两部分组成。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">电梯模拟调度系统包括:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">电梯调度核心运行模块</div>
+<div xmlns="http://www.w3.org/1999/xhtml">调度算法体现</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">电梯调度模拟场景包括:</div>
+<div xmlns="http://www.w3.org/1999/xhtml">电梯调度人工可控模拟模块</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div></项目组成>
+		<项目要求><div xmlns="http://www.w3.org/1999/xhtml">1.实现电梯调度模拟，可同时操作两部以上电梯。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">2.优化调度算法，使电梯使用效率达到高效。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">3.对电梯运行中发生的紧急情况有良好的处理方法。</div>
+<div xmlns="http://www.w3.org/1999/xhtml">4.模拟场景，完成可视化界面，达到模拟实际电梯运行调度的效果。</div></项目要求>
+		<项目范围特殊说明><font face="SimSun" xmlns="http://www.w3.org/1999/xhtml">本项目为电梯调度系统，应用于多电梯的调度管理以及对电梯运营的人为管理，对于电梯自身物理原因所造成的运行中的不良反应与本公司项目无关。</font></项目范围特殊说明>
+	</项目范围>
+	<项目输入>
+		<输入条目/>
+	</项目输入>
+	<项目用户>KGN电梯有限公司</项目用户>
+	<与其他项目关系>无其他关联项目</与其他项目关系>
+	<项目限制>
+		<完成时间>2011-12-16</完成时间>
+		<资金>710,000元</资金>
+		<资源><div xmlns="http://www.w3.org/1999/xhtml">项目经理1名</div>
+<div xmlns="http://www.w3.org/1999/xhtml">开发组：</div>
+<div xmlns="http://www.w3.org/1999/xhtml">开发组长1名</div>
+<div xmlns="http://www.w3.org/1999/xhtml">开发程序员4名</div>
+<div xmlns="http://www.w3.org/1999/xhtml">测试组：</div>
+<div xmlns="http://www.w3.org/1999/xhtml">测试组长1名</div>
+<div xmlns="http://www.w3.org/1999/xhtml">程序测试人员6名</div>
+<div xmlns="http://www.w3.org/1999/xhtml">配置组：</div>
+<div xmlns="http://www.w3.org/1999/xhtml">配置人员2名</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">计算机14台</div></资源>
+		<实现限制><div xmlns="http://www.w3.org/1999/xhtml"><font face="SimSun">本项目与电梯类型的限制有关,本软件产品只对应于KNG电梯有限公司及其下属工厂生产制造的电梯产品.</font></div>
+<div xmlns="http://www.w3.org/1999/xhtml">本项目资金规模不大于710,000元</div></实现限制>
+	</项目限制>
+	<其他></其他>
+</任务书>
