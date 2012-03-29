@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+/**************** Public Styles. ****************/
+* { font-family: 微软雅黑; font-size: 13px; }
+html, body { margin: 0; padding: 0; -moz-user-select: -moz-none; }
+.textAreaLimit { width: 960px; margin: 0 auto; }
+
+/**************** Header Styles. ****************/
+header.websiteHeader { position: fixed; top: 0; left: 0; z-index: 50; width: 100%; height: 40px; background: black; box-shadow: 0 1px 3px black; opacity: 0.7; }
+header.websiteHeader .textAreaLimit > div { display: inline-block; vertical-align: middle; line-height: 40px; }
+header.websiteHeader .textAreaLimit .logo { width: 128px; height: 40px; float: left; }
+header.websiteHeader .textAreaLimit .logo img { width: 128px; height: 40px; }
+header.websiteHeader .textAreaLimit .search { float: right; background-color: white; margin-top: 8px; border-radius: 5px; }
+header.websiteHeader .textAreaLimit .search .searchInput { width: 150px; height: 20px; padding: 3px; border: none; border-radius: 5px; float: left; }
+header.websiteHeader .textAreaLimit .search .searchButton { width: 20px; height: 20px; padding: 3px; display: inline-block; background: url("../images/search.png") 3px 3px no-repeat; cursor: pointer; float: right; border-left: 1px gray solid; }
+header.websiteHeader .textAreaLimit .userInfo { height: 40px; color: white; float: right; margin: 0 20px; }
+header.websiteHeader .textAreaLimit .userInfo > div { position: relative; height: 32px; display: inline-block; padding: 0 10px; vertical-align: bottom; line-height: 30px; cursor: pointer; }
+header.websiteHeader .textAreaLimit .userInfo > div:not(:nth-child(1)):hover { background-color: white; color: black; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+header.websiteHeader .textAreaLimit .userInfo div .title { }
+header.websiteHeader .textAreaLimit .userInfo div ul.content { position: absolute; right: -1px; top: 32px; display: none; background-color: white; border-left: 1px black solid; border-right: 1px black solid; border-bottom: 1px black solid; border-top-left-radius: 5px;  border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; margin: 0; padding: 10px 0; list-style: none; }
+header.websiteHeader .textAreaLimit .userInfo div:hover ul.content { display: block; }
+header.websiteHeader .textAreaLimit .userInfo div ul.content li { width: 100px; padding: 0px 15px; transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; }
+header.websiteHeader .textAreaLimit .userInfo div ul.content li:hover { background-color: silver; }
+header.websiteHeader .textAreaLimit .userInfo div ul.content li a { display: inline-block; width: 100%; color: black; text-decoration: none; }
+
+header.websiteHeader .textAreaLimit .userInfo .username div {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	float: left;
+	margin: -3px 5px 0 0;
+}
+header.websiteHeader .textAreaLimit .userInfo .username div img {
+	width: 32px;
+	height: 32px;
+	float: left;
+}
+
+
+
+
+header.websiteHeader .textAreaLimit .userLogin { float: right; }
+header.websiteHeader .textAreaLimit .userLogin input.text { width: 120px; padding: 4px; margin: 0 4px; border: 1px black solid; border-radius: 3px; transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; opacity: 0.7; }
+header.websiteHeader .textAreaLimit .userLogin input.text:focus { box-shadow: 0 0 10px white; opacity: 0.9; }
+header.websiteHeader .textAreaLimit .userLogin input.submit { width: 70px; padding: 3px; margin: 0 4px; border: 1px black solid; border-radius: 3px; transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; background: #CCCCCC; cursor: pointer; }
+header.websiteHeader .textAreaLimit .userLogin input.submit:hover { background: #EEEEEE; }

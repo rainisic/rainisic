@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- Default package. -->
+	<package name="default" extends="struts-default" namespace="/">
+
+		<!-- Custom interceptors -->
+		<interceptors>
+			<interceptor name="autologin"
+				class="com.smt.interceptor.AutoLoginInterceptor" />
+			<interceptor-stack name="customStack">
+				<interceptor-ref name="autologin"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+
+		<!-- Default interceptor stack. -->
+		<default-interceptor-ref name="customStack"/>
+
+		<!-- Global results -->
+		<global-results>
+			<result name="error">/404.jsp</result>
+		</global-results>
+		
+		<!-- Home page action. -->
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+	</package>
+	
+	<!-- User package. -->
+	<package name="user" extends="default" namespace="/user">
+		<action name="*" class="com.smt.action.UserAction" method="{1}">
+			<result name="result" type="stream">
+				<param name="contentType">text</param>
+        		<param name="inputName">inputStream</param>
+			</result>
+			<result name="logout_success" type="redirect">/</result>
+			<result name="homepage">/home.jsp</result>
+		</action>
+	</package>
+	
+	<!-- Feed JSON package. -->
+	<package name="feed" extends="json-default" namespace="/feed">
+		<action name="*" class="com.smt.action.FeedAction" method="{1}">
+			<result name="success" type="json"/>
+		</action>
+	</package>
+	
+	<!-- SMMS Data Manager Implementation. -->
+	<package name="smms" extends="json-default" namespace="/smms">
+		<action name="*" class="com.smms.impl.action.DataManageAction" method="{1}">
+			<result name="success" type="json"/>
+		</action>
+	</package>
+</struts>
