@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+* { font-family: "微软雅黑"; }
+html, body { margin: 0; padding: 0; font-size: 13px; }
+.backgroundDiv { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: url(../images/login-bg.jpg); z-index: -1; }
+.loginDiv { position: fixed; left: 30%; top: 30%; z-index: 2; border: 1px black solid; padding: 5px 30px; background: rgba(255, 255, 255, 0.6); border-radius: 8px; box-shadow: 3px 3px 10px black; text-align: right; }
+.loginDiv .titleDiv { text-align: center; font-size: 20px; margin: 10px 0px; }
+.loginDiv label { display: inline-block; width: 60px; text-align: center; cursor: pointer; }
+.loginDiv input[type=text], .loginDiv input[type=password] { width: 150px; height: 25px; border: 1px gray solid; border-radius: 5px; padding: 0 5px;  }
+.loginDiv input[type=submit] { width: 80px; height: 30px; border: 1px black solid; border-radius: 5px; margin-top: 20px; background: -webkit-gradient(linear, left top, left bottom, from(#ffee66), to(#ffaa22)); background: -moz-linear-gradient(top,  #ffee66,  #ffaa22); cursor: pointer; transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; }
+.loginDiv input[type=submit]:hover { background: -webkit-gradient(linear, left top, left bottom, from(#ffe300), to(#ff9d00)); background: -moz-linear-gradient(top,  #ffe300,  #ff9d00);  }
