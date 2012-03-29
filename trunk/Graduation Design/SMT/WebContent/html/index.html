@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="copyright" content="© http://www.rainisic.com">
+<title>Welcome to MicroBlog</title>
+<link type="text/css" rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="blueBackgroundDiv">
+		<div class="textAreaLimit">
+			<div class="leftSectionDiv">
+				<div class="logoDiv"><img src="../images/logo.png"/></div>
+				<div class="contentDiv">
+					The best website.
+				</div>
+			</div>
+			<div class="rightSectionDiv">
+				<section class="login">
+					<form action="login" method="post">
+						<div>
+							<input name="user.username" class="text" type="text" required="required" maxlength="255" placeholder="Username"
+							><input name="user.password" class="text" type="password" required="required" maxlength="255" placeholder="Password"
+							><input class="submit" type="submit" value="Sign In">
+						</div>
+						<div>
+							<span><input id="rememberMe" name="rememberMe" type="checkbox"><label for="rememberMe"><a>Remember me</a></label></span>
+							<span><a href="#">Forgot password?</a></span>
+						</div>
+					</form>
+				</section>
+				<section class="register">
+					<div class="title">New to Micro Blog? Join Now!</div>
+					<form>
+						<p><input name="user.nickname" class="text" type="text" required="required" placeholder="Nick name"></p>
+						<p><input name="user.email" class="text" type="email" required="required" placeholder="E-mail"></p>
+						<p><input name="user.password" class="text" type="password" required="required" placeholder="Password"></p>
+						<p><input class="submit" type="submit" value="Sign Up"></p>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	<div class="orangeBackgroundDiv"></div>
+	
+	<div class="whiteBackgroundDiv">
+		<footer class="copyright">
+			<div>Copyright 2012 by <a href="http://www.rainisic.com">Rainisic</a> © . All Rights Reserved.</div>
+		</footer>
+	</div>
+</body>
+</html>
