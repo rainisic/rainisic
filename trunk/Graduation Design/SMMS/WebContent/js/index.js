@@ -12,7 +12,7 @@ function initialize() {
 	// Create dialog.
 	$(".dialogContentDiv").dialog({
 		autoOpen: false,
-		width: 800,
+		width: 900,
 		height: 500,
 		show: "blind",
 		hide: "fade"
@@ -27,13 +27,13 @@ function initialize() {
 function actionListener() {
 	
 	// Add icon click action to open dialog.
-	$(".iconDiv").click(function() {
+	$(".iconDiv").live("click", function() {
 		$(".dialogContentDiv#" + $(this).attr("id")).dialog("open");
 		return ;
 	});
 	
 	// Add category on click.
-	$(".category").click(function() {
+	$(".category").live("click", function() {
 		
 		// Toggle class.
 		$(".category").removeClass("active");
@@ -64,11 +64,62 @@ function loadDataManageMap() {
 	
 	$.ajax({
 		type: "post",
-		dataType: "text",
-		url: "../SMT/feed/subscribe?page.pageIndex=0",
+		dataType: "json",
+		url: "smt/loadDataURLMapping",
 		success: function(result) {
 			
-			console.log(result);
+			if (result != null && result.dataURLMapping != null) {
+				
+				// For each categories.
+				$(result.dataURLMapping).each(function(index) {
+					
+					// Define the category/
+					var category = this;
+					
+					// Add category.
+					if (index == 0) {
+						$("#dataManageDiv .categoriesDiv").append("<div id=\"" + category[0] + "\" class=\"category active\">" + category[1] + "</div>");
+						$("#dataManageDiv .contentsDiv").append("<div id=\"" + category[0] + "\" class=\"content active\"></div>");
+					} else {
+						$("#dataManageDiv .categoriesDiv").append("<div id=\"" + category[0] + "\" class=\"category\">" + category[1] + "</div>");
+						$("#dataManageDiv .contentsDiv").append("<div id=\"" + category[0] + "\" class=\"content\"></div>");
+					}
+					
+					// Load data of this category.
+					$.ajax({
+						type: "post",
+						dataType: "json",
+						url: "smt/" + category[0],
+						success: function(res) {
+							
+							if (res != null && res.contents != null) {
+								
+								// Add table.
+								$("#dataManageDiv .contentsDiv #" + category[0]).append("<table></table>");
+								
+								// Add table content.
+								$(res.contents).each(function(row) {
+									
+									// Define the data row.
+									var dataRow = this;
+									
+									// Add row.
+									$("#dataManageDiv .contentsDiv #" + category[0] + " table").append("<tr></tr>");
+									
+									// Add content text.
+									$(dataRow).each(function() {
+										if (row == 0) {
+											$("#dataManageDiv .contentsDiv #" + category[0] + " table tr:nth-child(" + (row + 1) + ")").append("<th>" + this + "</th>");
+										} else {
+											$("#dataManageDiv .contentsDiv #" + category[0] + " table tr:nth-child(" + (row + 1) + ")").append("<td>" + this + "</td>");
+										}
+									});
+								});
+							}
+						}
+					});
+				});
+			}
 		}
 	});
 }
