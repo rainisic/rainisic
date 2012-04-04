@@ -40,13 +40,13 @@
 	
 	<div id="dataManageDiv" class="dialogContentDiv" title="数据管理">
 		<div class="categoriesDiv">
-			<div id="dataManage1" class="category active">用户数据管理</div>
+<!-- 			<div id="dataManage1" class="category active">用户数据管理</div>
 			<div id="dataManage2" class="category">微博数据管理</div>
 			<div id="dataManage3" class="category">回复数据管理</div>
-			<div id="dataManage4" class="category">话题数据管理</div>
+			<div id="dataManage4" class="category">话题数据管理</div> -->
 		</div>
 		<div class="contentsDiv">
-			<div id="dataManage1" class="content active">
+<!-- 			<div id="dataManage1" class="content active">
 				<table>
 					<tr>
 						<th>ID</th>
@@ -172,7 +172,7 @@
 			</div>
 			<div id="dataManage2" class="content">2 Content</div>
 			<div id="dataManage3" class="content">3 Content</div>
-			<div id="dataManage4" class="content">4 Content</div>
+			<div id="dataManage4" class="content">4 Content</div> -->
 		</div>
 	</div>
 	<div id="logManageDiv" class="dialogContentDiv" title="日志管理">

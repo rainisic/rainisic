@@ -11,4 +11,9 @@
 			<result name="error">login.jsp</result>
 		</action>
 	</package>
+	<package name="smt" extends="json-default" namespace="/smt">
+		<action name="*" class="com.smt.impl.action.DataManagerAction" method="{1}">
+			<result name="success" type="json"/>
+		</action>
+	</package>
 </struts>
