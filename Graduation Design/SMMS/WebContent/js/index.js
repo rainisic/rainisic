@@ -19,6 +19,19 @@ function initialize() {
 	});
 	
 	loadData();
+	
+	$("#styleControlDiv input").click(function() {
+
+		$.ajax({
+			type: "post",
+			dataType: "json",
+			url: "smt/ThemeManagerAction_changeTheme",
+			data: "theme=" + $("#styleControlDiv select").val(),
+			success: function(result) {
+				
+			}
+		});
+	});
 }
 
 /**
@@ -68,7 +81,7 @@ function loadDataManageMap() {
 	$.ajax({
 		type: "post",
 		dataType: "json",
-		url: "smt/loadDataURLMapping",
+		url: "smt/DataManagerAction_loadDataURLMapping",
 		success: function(result) {
 			
 			if (result != null && result.dataURLMapping != null) {
@@ -156,13 +169,12 @@ function loadStyles() {
 	
 	$.ajax({
 		type: "post",
-		url: "smt/listLogs",
+		url: "smt/ThemeManagerAction_loadThemes",
 		dataType: "json",
 		success: function(result) {
 			
 			$(result.contents).each(function() {
-				$("#styleControlDiv select").append("<option>" + this.name + "</option>");
-				
+				$("#styleControlDiv select").append("<option>" + this[0] + "</option>");
 			});
 		}
 	});
