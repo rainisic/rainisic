@@ -19,8 +19,8 @@ section.content .userInfoDiv .portrait img { width: 180px; height: 180px; border
 section.content .userInfoDiv .data { width: 498px; display: inline-block; padding-left: 20px; vertical-align: top; }
 section.content .userInfoDiv .data .username { text-align: left; font-size: 18px; font-weight: bold; padding: 5px 0; }
 section.content .userInfoDiv .data .info {  }
-section.content .userInfoDiv .data .info .gender.m { background: url("../images/m.png") no-repeat; }
-section.content .userInfoDiv .data .info .gender.f { background: url("../images/f.png") no-repeat; }
+section.content .userInfoDiv .data .info .gender.m { background: url("../../../images/m.png") no-repeat; }
+section.content .userInfoDiv .data .info .gender.f { background: url("../../../images/f.png") no-repeat; }
 section.content .userInfoDiv .data .description { height: 90px; margin: 5px 0; overflow: hidden; }
 section.content .userInfoDiv .data .operation .funs { display: inline-block; height: 25px; width: 80px; text-align: center; vertical-align: middle; line-height: 25px; border: 1px #008800 solid; border-radius: 5px; background-color: #91D925; cursor: pointer; }
 section.content .userInfoDiv .data .operation .funs:hover { background-color: #89D900; }
