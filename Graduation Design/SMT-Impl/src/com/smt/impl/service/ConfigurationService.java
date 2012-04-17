@@ -16,6 +16,8 @@ public class ConfigurationService {
 
 	private static ConfigurationService configurationService;
 	
+	private ConfigurationDao configurationDao = ConfigurationDao.getInstance();
+	
 	private ConfigurationService() {
 	}
 
@@ -25,9 +27,7 @@ public class ConfigurationService {
 		}
 		return configurationService;
 	}
-	
-	private ConfigurationDao configurationDao;
-	
+
 	public void changeTheme(String theme) {
 		configurationDao.changeTheme(theme);
 	}

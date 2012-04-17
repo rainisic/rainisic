@@ -36,7 +36,11 @@ public class ThemeManagerAction extends ActionSupport {
 	}
 	
 	public String changeTheme() {
-		return null;
+		if (theme != null && !theme.equals("")) {
+			configurationService.changeTheme(theme);
+			return SUCCESS;
+		}
+		return ERROR;
 	}
 
 	/**

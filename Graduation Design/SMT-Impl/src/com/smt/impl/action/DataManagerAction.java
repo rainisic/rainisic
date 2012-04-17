@@ -46,9 +46,9 @@ public class DataManagerAction extends ActionSupport {
 	 */
 	public String loadDataURLMapping() {
 		dataURLMapping = new LinkedList<String[]>();
-		dataURLMapping.add(new String[] { "loadUsers", "用户" });
-		dataURLMapping.add(new String[] { "loadFeeds", "微博" });
-		dataURLMapping.add(new String[] { "loadComments", "回复" });
+		dataURLMapping.add(new String[] { "DataManagerAction_loadUsers", "用户" });
+		dataURLMapping.add(new String[] { "DataManagerAction_loadFeeds", "微博" });
+		dataURLMapping.add(new String[] { "DataManagerAction_loadComments", "回复" });
 		return SUCCESS;
 	}
 
