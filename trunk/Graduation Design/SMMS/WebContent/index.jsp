@@ -64,10 +64,6 @@
 			<p>
 				<label>请选择更换的主题：</label>
 				<select>
-					<option>默认主题</option>
-					<option>时尚现代风</option>
-					<option>古朴典雅风</option>
-					<option>青春活力风</option>
 				</select>
 			</p>
 			<p><input type="button" value="确定更改"/></p>
