@@ -12,7 +12,7 @@ header.websiteHeader .textAreaLimit .logo { width: 128px; height: 40px; float: l
 header.websiteHeader .textAreaLimit .logo img { width: 128px; height: 40px; }
 header.websiteHeader .textAreaLimit .search { float: right; background-color: white; margin-top: 8px; border-radius: 5px; }
 header.websiteHeader .textAreaLimit .search .searchInput { width: 150px; height: 20px; padding: 3px; border: none; border-radius: 5px; float: left; }
-header.websiteHeader .textAreaLimit .search .searchButton { width: 20px; height: 20px; padding: 3px; display: inline-block; background: url("../images/search.png") 3px 3px no-repeat; cursor: pointer; float: right; border-left: 1px gray solid; }
+header.websiteHeader .textAreaLimit .search .searchButton { width: 20px; height: 20px; padding: 3px; display: inline-block; background: url("../../../images/search.png") 3px 3px no-repeat; cursor: pointer; float: right; border-left: 1px gray solid; }
 header.websiteHeader .textAreaLimit .userInfo { height: 40px; color: white; float: right; margin: 0 20px; }
 header.websiteHeader .textAreaLimit .userInfo > div { position: relative; height: 32px; display: inline-block; padding: 0 10px; vertical-align: bottom; line-height: 30px; cursor: pointer; }
 header.websiteHeader .textAreaLimit .userInfo > div:not(:nth-child(1)):hover { background-color: white; color: black; border-top-left-radius: 5px; border-top-right-radius: 5px; }
