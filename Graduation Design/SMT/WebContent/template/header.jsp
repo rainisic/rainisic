@@ -3,7 +3,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <script type="text/javascript" src="js/lib/jquery-alert/jquery.alert.js"></script>
 <link type="text/css" rel="stylesheet" href="js/lib/jquery-alert/jquery.alert.default.css">
-<link rel="stylesheet" type="text/css" href="${ session.smms_theme }/header.css">
+<link rel="stylesheet" type="text/css" href="css/theme/${ session.smms_theme }/header.css">
 <script type="text/javascript" src="js/header.js"></script>
 <header class="websiteHeader">
 	<div class="textAreaLimit">

@@ -9,6 +9,7 @@ package com.smt.service;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.smt.dao.ConfigurationDaoInterface;
 import com.smt.entity.Configuration;
@@ -27,6 +28,7 @@ public class ConfigurationService implements ConfigurationServiceInterface {
 	 * @see com.smt.service.ConfigurationServiceInterface#load()
 	 */
 	@Override
+	@Transactional
 	public Configuration load() {
 		return configurationDao.load();
 	}

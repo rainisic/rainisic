@@ -23,7 +23,7 @@
 <script type="text/javascript" src="js/lib/jquery-alert/jquery.alert.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <link type="text/css" rel="stylesheet" href="js/lib/jquery-alert/jquery.alert.default.css">
-<link type="text/css" rel="stylesheet" href="${ session.smms_theme }/index.css">
+<link type="text/css" rel="stylesheet" href="css/theme/${ session.smms_theme }/index.css">
 </head>
 <body>
 	<div class="blueBackgroundDiv">
