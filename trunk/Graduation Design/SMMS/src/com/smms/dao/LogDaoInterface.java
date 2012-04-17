@@ -9,7 +9,6 @@
 package com.smms.dao;
 
 import java.util.List;
-import com.smms.dto.Page;
 import com.smms.entity.Log;
 
 /**
@@ -26,9 +25,8 @@ public interface LogDaoInterface {
 	public int save(Log log);
 	
 	/**
-	 * Query logs by page.
-	 * @param page
+	 * List all logs.
 	 * @return
 	 */
-	public List<Log> query(Page page);
+	public List<Log> list();
 }

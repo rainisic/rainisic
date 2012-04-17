@@ -12,6 +12,9 @@
 		</action>
 	</package>
 	<package name="smt" extends="json-default" namespace="/smt">
+		<action name="listLogs" class="com.smms.action.LogAction" method="list">
+			<result name="success" type="json"/>
+		</action>
 		<action name="*" class="com.smt.impl.action.DataManagerAction" method="{1}">
 			<result name="success" type="json"/>
 		</action>

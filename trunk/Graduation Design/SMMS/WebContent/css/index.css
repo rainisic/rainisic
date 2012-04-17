@@ -48,6 +48,54 @@ html, body { margin: 0; padding: 0; font-size: 13px; }
 	text-align: center;
 }
 
+#logManageDiv table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px gray solid;
+}
+#logManageDiv table tr:nth-child(2n) {
+	background-color: #EEEEFF;
+}
+#logManageDiv table tr:nth-child(2n + 1) {
+	background-color: #FFFFEE;
+}
+#logManageDiv table th {
+	border: 1px gray solid;
+	padding: 5px 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#efefef));
+	background: -moz-linear-gradient(top,  #dddddd,  #efefef);
+}
+#logManageDiv table td {
+	border: 1px silver solid;
+	padding: 5px 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#styleControlDiv .content {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+}
+#styleControlDiv .content select {
+	width: 150px;
+}
+#styleControlDiv .content input[type="button"] {
+	-moz-transition: all 500ms ease 0s;
+    background: -moz-linear-gradient(center top , #FFEE66, #FFAA22) repeat scroll 0 0 transparent;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 20px;
+    width: 80px;
+}
+
 .dialogContentDiv *::-webkit-scrollbar { width: 10px; height: 10px; }
 .dialogContentDiv *::-webkit-scrollbar-track { box-shadow: inset 0 0 6px rgba(92, 156, 204, 1); border-radius: 10px; }
 .dialogContentDiv *::-webkit-scrollbar-thumb { box-shadow: inset 0 0 6px rgba(75, 157, 218, 1); border-radius: 10px; }
