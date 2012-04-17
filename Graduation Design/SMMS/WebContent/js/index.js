@@ -53,8 +53,11 @@ function loadData() {
 	// Load data manage items.
 	loadDataManageMap();
 	
-	// Load logic manage items.
-	loadLogicManageMap();
+	// Load logs.
+	loadLogs();
+	
+	// Load styles.
+	loadStyles();
 }
 
 /**
@@ -124,17 +127,43 @@ function loadDataManageMap() {
 	});
 }
 
-/**
- * Load logic manage items.
- */
-function loadLogicManageMap() {
+function loadLogs() {
+
+	// Load all logs by AJAX.
+	$.ajax({
+		type: "post",
+		url: "smt/listLogs",
+		dataType: "json",
+		success: function(result) {
+			
+			// Append line to table.
+			$(result.logs).each(function() {
+				$("#logManageDiv table").append(
+					"<tr>" +
+						"<td>" + this.id + "</td>" +
+						"<td>" + this.operation + "</td>" +
+						"<td>" + this.details + "</td>" +
+						"<td>" + this.operator.username + "</td>" +
+						"<td>" + this.createTime + "</td>" +
+					"</tr>"
+				);
+			});
+		}
+	});
+}
+
+function loadStyles() {
 	
-//	$.ajax({
-//		type: "post",
-//		url: SMTPath + "getLogicManageMap",
-//		dataType: "json",
-//		success: function() {
-//			
-//		}
-//	});
+	$.ajax({
+		type: "post",
+		url: "smt/listLogs",
+		dataType: "json",
+		success: function(result) {
+			
+			$(result.contents).each(function() {
+				$("#styleControlDiv select").append("<option>" + this.name + "</option>");
+				
+			});
+		}
+	});
 }

@@ -9,10 +9,7 @@
 package com.smms.dao;
 
 import java.util.List;
-
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
-import com.smms.dto.Page;
 import com.smms.entity.Log;
 
 /**
@@ -21,19 +18,18 @@ import com.smms.entity.Log;
  */
 @Repository
 public class LogDao extends BaseDaoSupport implements LogDaoInterface {
+	
 	/*
 	 * (non-Javadoc)
-	 * 
-	 * @see com.smms.dao.LogDaoInterface#query(com.smms.dto.Page)
+	 * @see com.smms.dao.LogDaoInterface#list()
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Log> query(Page page) {
+	public List<Log> list() {
 
 		// Query and return logs by page.
 		return (List<Log>) sessionFactory.getCurrentSession()
-				.createCriteria(Log.class).setFirstResult(page.getStartIndex())
-				.setMaxResults(page.getPageSize()).list();
+				.createCriteria(Log.class).list();
 	}
 
 	/*
