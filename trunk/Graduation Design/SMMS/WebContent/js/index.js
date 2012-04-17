@@ -20,6 +20,7 @@ function initialize() {
 	
 	loadData();
 	
+	// On theme change button clicked.
 	$("#styleControlDiv input").click(function() {
 
 		$.ajax({
