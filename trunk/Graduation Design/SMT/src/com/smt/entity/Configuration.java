@@ -15,10 +15,10 @@ import javax.persistence.Table;
 
 /**
  * @author Rainisic
- *
+ * 
  */
 @Entity
-@Table(name="smms_configuration")
+@Table(name = "smms_configuration")
 public class Configuration implements Serializable {
 
 	/** Default serial version UID. */
@@ -27,8 +27,10 @@ public class Configuration implements Serializable {
 	@Id
 	@GeneratedValue
 	private int id;
-	
+
 	private String theme;
+
+	private boolean allowRegister;
 
 	/**
 	 * @return the id
@@ -38,7 +40,8 @@ public class Configuration implements Serializable {
 	}
 
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public void setId(int id) {
 		this.id = id;
@@ -52,9 +55,25 @@ public class Configuration implements Serializable {
 	}
 
 	/**
-	 * @param theme the theme to set
+	 * @param theme
+	 *            the theme to set
 	 */
 	public void setTheme(String theme) {
 		this.theme = theme;
+	}
+
+	/**
+	 * @return the allowRegister
+	 */
+	public boolean isAllowRegister() {
+		return allowRegister;
+	}
+
+	/**
+	 * @param allowRegister
+	 *            the allowRegister to set
+	 */
+	public void setAllowRegister(boolean allowRegister) {
+		this.allowRegister = allowRegister;
 	}
 }

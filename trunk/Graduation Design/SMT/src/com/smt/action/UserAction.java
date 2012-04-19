@@ -9,6 +9,7 @@
 package com.smt.action;
 
 import com.smt.entity.User;
+import com.smt.service.ConfigurationServiceInterface;
 import com.smt.service.UserServiceInterface;
 import com.smt.util.Constants;
 import com.smt.util.CookieUtil;
@@ -27,6 +28,8 @@ public class UserAction extends BaseActionSupport {
 	/** User service. */
 	private UserServiceInterface userService;
 
+	private ConfigurationServiceInterface configurationService;
+
 	/** User. */
 	private User user;
 
@@ -41,7 +44,8 @@ public class UserAction extends BaseActionSupport {
 	public String checkEmail() {
 
 		// Check e-mail length.
-		if (user != null && user.getEmail() != null && user.getEmail().length() > 0) {
+		if (user != null && user.getEmail() != null
+				&& user.getEmail().length() > 0) {
 
 			// Check e-mail availability.
 			setInputStreamValue(userService.checkAvailability(user.getEmail()) ? "available"
@@ -57,10 +61,16 @@ public class UserAction extends BaseActionSupport {
 	 * @return
 	 */
 	public String register() {
+		
+		if (!configurationService.load().isAllowRegister()) {
+			setInputStreamValue("pause");
+			return "result";
+		}
 
 		// Check null
-		if (user != null && user.getEmail() != null
-				&& user.getEmail().length() > 0 && user.getPassword() != null
+		if (user != null
+				&& user.getEmail() != null && user.getEmail().length() > 0
+				&& user.getPassword() != null
 				&& user.getPassword().length() > 0) {
 
 			// Encrypt the password.
@@ -114,8 +124,7 @@ public class UserAction extends BaseActionSupport {
 							DESEncryptor.encrypt(persistentUser.getUsername())
 									+ "|"
 									+ DESEncryptor.encrypt(persistentUser
-											.getPassword()),
-							60 * 60 * 24 * 7);
+											.getPassword()), 60 * 60 * 24 * 7);
 				}
 
 				// Add user to session.
@@ -171,7 +180,7 @@ public class UserAction extends BaseActionSupport {
 		}
 		return "error";
 	}
-	
+
 	/**
 	 * @param userService
 	 *            the userService to set
@@ -188,7 +197,8 @@ public class UserAction extends BaseActionSupport {
 	}
 
 	/**
-	 * @param user the user to set
+	 * @param user
+	 *            the user to set
 	 */
 	public void setUser(User user) {
 		this.user = user;
@@ -202,9 +212,27 @@ public class UserAction extends BaseActionSupport {
 	}
 
 	/**
-	 * @param autologin the auto login to set
+	 * @param autologin
+	 *            the auto login to set
 	 */
 	public void setAutologin(boolean autologin) {
 		this.autologin = autologin;
 	}
+
+	/**
+	 * @return the configurationService
+	 */
+	public ConfigurationServiceInterface getConfigurationService() {
+		return configurationService;
+	}
+
+	/**
+	 * @param configurationService
+	 *            the configurationService to set
+	 */
+	public void setConfigurationService(
+			ConfigurationServiceInterface configurationService) {
+		this.configurationService = configurationService;
+	}
+
 }
