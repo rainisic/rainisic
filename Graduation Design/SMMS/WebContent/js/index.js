@@ -29,10 +29,15 @@ function initialize() {
 			url: "smt/ThemeManagerAction_changeTheme",
 			data: "theme=" + $("#styleControlDiv select").val(),
 			success: function(result) {
-				
+				if (result.result == "success") {
+					alert("样式修改成功!");
+				} else {
+					alert("样式修改失败!");
+				}
 			}
 		});
 	});
+
 }
 
 /**
@@ -66,6 +71,9 @@ function loadData() {
 	
 	// Load data manage items.
 	loadDataManageMap();
+	
+	// Load logic manage map.
+	loadLogicManageMap();
 	
 	// Load logs.
 	loadLogs();
@@ -137,6 +145,41 @@ function loadDataManageMap() {
 					});
 				});
 			}
+		}
+	});
+}
+
+function loadLogicManageMap() {
+	
+	$.ajax({
+		type: "post",
+		url: "smt/LogicManagerAction_loadControlList",
+		dataType: "json",
+		success: function(result) {
+			$(result.contents).each(function() {
+				$("#logicControlDiv .content").prepend(
+					"<p class=\"item\">" +
+						"<input id=\"" + this[0] + "\" type=\"checkbox\" checked=\"checked\"/>" +
+						"<label for=\"" + this[0] + "\">" + this[1] + "</label>" +
+					"</p>"
+				);
+				
+				$("#logicControlDiv .content .item input").click(function() {
+					$.ajax({
+						type: "post",
+						url: "smt/LogicManagerAction_" + $(this).attr("id"),
+						dataType: "json",
+						data: "allow=" + ($(this).attr("checked") == "checked"),
+						success: function(result) {
+							if (result.result == "success") {
+								alert("操作成功！");
+							} else {
+								alert("操作失败！");
+							}
+						}
+					});
+				});
+			});
 		}
 	});
 }

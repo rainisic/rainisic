@@ -32,12 +32,12 @@
 			<div class="icon"><img src="images/db-manage.png"/></div>
 			<div class="text">日志管理</div>
 		</div>
-<!-- 	
+	
 		<div id="logicControlDiv" class="iconDiv">
 			<div class="icon"><img src="images/db-manage.png"/></div>
 			<div class="text">逻辑控制</div>
 		</div>
--->
+
 		<div id="styleControlDiv" class="iconDiv">
 			<div class="icon"><img src="images/db-manage.png"/></div>
 			<div class="text">样式控制</div>
@@ -59,10 +59,12 @@
 			</tr>
 		</table>
 	</div>
-<!-- 
+
 	<div id="logicControlDiv" class="dialogContentDiv" title="逻辑控制">
+		<div class="content">
+		</div>
 	</div>
--->
+
 	<div id="styleControlDiv" class="dialogContentDiv" title="样式控制">
 		<div class="content">
 			<p>
