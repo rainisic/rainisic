@@ -80,12 +80,29 @@ html, body { margin: 0; padding: 0; font-size: 13px; }
 #styleControlDiv .content {
 	width: 100%;
 	margin: 20px auto;
+	text-align: left;
+}
+#styleControlDiv .content > p:last-child {
 	text-align: center;
 }
 #styleControlDiv .content select {
 	width: 150px;
 }
 #styleControlDiv .content input[type="button"] {
+	-moz-transition: all 500ms ease 0s;
+    background: -moz-linear-gradient(center top , #FFEE66, #FFAA22) repeat scroll 0 0 transparent;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 20px;
+    width: 80px;
+}
+
+#logicControlDiv .content > p:last-child {
+	text-align: center;
+}
+#logicControlDiv .content input[type="button"] {
 	-moz-transition: all 500ms ease 0s;
     background: -moz-linear-gradient(center top , #FFEE66, #FFAA22) repeat scroll 0 0 transparent;
     border: 1px solid black;
