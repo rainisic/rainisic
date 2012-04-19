@@ -28,7 +28,11 @@ public class ConfigurationService {
 		return configurationService;
 	}
 
-	public void changeTheme(String theme) {
-		configurationDao.changeTheme(theme);
+	public boolean changeTheme(String theme) {
+		return configurationDao.changeTheme(theme);
+	}
+	
+	public boolean changeRegister(boolean allow) {
+		return configurationDao.changeRegister(allow);
 	}
 }
