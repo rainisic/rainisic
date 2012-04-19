@@ -14,10 +14,10 @@ $(document).ready(function() {
 			success: function(mes) {
 				
 				// Process the result.
-				if (mes != "loginFailed") {
-					window.location.href = "home/" + mes;
-				} else {
+				if (mes == "loginFailed") {
 					$.alert("用户名或密码错误！");
+				} else {
+					window.location.href = "home/" + mes;
 				}
 			}
 		});
@@ -78,10 +78,12 @@ $(document).ready(function() {
 				success: function(mes) {
 					
 					// Process the result.
-					if (mes != "registerFailed") {
-						window.location.href = "home/" + mes;
-					} else {
+					if (mes == "registerFailed") {
 						$.alert("该E-mail不可用！");
+					} else if(mes == "pause") {
+						$.alert("暂停注册！");
+					} else {
+						window.location.href = "home/" + mes;
 					}
 				}
 			});
