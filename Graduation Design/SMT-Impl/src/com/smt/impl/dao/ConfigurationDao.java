@@ -28,7 +28,7 @@ public class ConfigurationDao {
 		return configurationDao;
 	}
 	
-	public void changeTheme(String theme) {
+	public boolean changeTheme(String theme) {
 		
 		// Define the SQL statement and result list.
 		String sql = "UPDATE `smms_configuration` SET `theme`= ?;";
@@ -44,6 +44,7 @@ public class ConfigurationDao {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, theme);
 			ps.executeUpdate();
+			return true;
 
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -63,5 +64,45 @@ public class ConfigurationDao {
 				e.printStackTrace();
 			}
 		}
+		return false;
+	}
+	
+	public boolean changeRegister(boolean allow) {
+		
+		// Define the SQL statement and result list.
+		String sql = "UPDATE `smms_configuration` SET `allowRegister`= ?;";
+
+		// Define the connection and prepared statement.
+		Connection con = null;
+		PreparedStatement ps = null;
+
+		try {
+
+			// Instant connection and prepare the statement by SQL.
+			con = DBConnection.getConnection();
+			ps = con.prepareStatement(sql);
+			ps.setBoolean(1, allow);
+			ps.executeUpdate();
+			return true;
+
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+			try {
+				if (con != null && !con.isClosed()) {
+					con.rollback();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} finally {
+			try {
+				if (con != null && !con.isClosed()) {
+					con.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return false;
 	}
 }

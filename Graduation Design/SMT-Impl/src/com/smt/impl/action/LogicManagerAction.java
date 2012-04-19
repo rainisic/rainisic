@@ -1,6 +1,6 @@
-/* @(#) ThemeManagerAction.java
+/* @(#) LogicManagerAction.java
  *
- * Date: 2012-4-17
+ * Date: 2012-4-19
  * 
  * Author: Rainisic
  */
@@ -16,7 +16,7 @@ import com.smt.impl.service.ConfigurationService;
  * @author Rainisic
  * 
  */
-public class ThemeManagerAction extends ActionSupport {
+public class LogicManagerAction extends ActionSupport {
 
 	/** Default serial version UID. */
 	private static final long serialVersionUID = 1L;
@@ -27,27 +27,24 @@ public class ThemeManagerAction extends ActionSupport {
 	/** The data contents. */
 	private List<String[]> contents;
 
-	private String theme;
-	
+	private boolean allow;
+
 	private String result;
 
-	public String loadThemes() {
+	public String loadControlList() {
 		contents = new LinkedList<String[]>();
-		contents.add(new String[] { "default", "默认主题" });
-		contents.add(new String[] { "fashion", "时尚主题" });
+		contents.add(new String[] { "changeRegister", "打开/关闭注册功能" });
 		return SUCCESS;
 	}
 
-	public String changeTheme() {
-		if (theme != null && !theme.equals("")) {
-			if (configurationService.changeTheme(theme)) {
-				result = "success";
-			} else {
-				result = "failed";
-			}
+	public String changeRegister() {
+
+		if (configurationService.changeRegister(allow)) {
+			result = "success";
 		} else {
 			result = "failed";
 		}
+
 		return SUCCESS;
 	}
 
@@ -59,26 +56,24 @@ public class ThemeManagerAction extends ActionSupport {
 	}
 
 	/**
-	 * @param contents
-	 *            the contents to set
+	 * @param contents the contents to set
 	 */
 	public void setContents(List<String[]> contents) {
 		this.contents = contents;
 	}
 
 	/**
-	 * @return the theme
+	 * @return the allow
 	 */
-	public String getTheme() {
-		return theme;
+	public boolean isAllow() {
+		return allow;
 	}
 
 	/**
-	 * @param theme
-	 *            the theme to set
+	 * @param allow the allow to set
 	 */
-	public void setTheme(String theme) {
-		this.theme = theme;
+	public void setAllow(boolean allow) {
+		this.allow = allow;
 	}
 
 	/**
@@ -94,5 +89,4 @@ public class ThemeManagerAction extends ActionSupport {
 	public void setResult(String result) {
 		this.result = result;
 	}
-	
 }
