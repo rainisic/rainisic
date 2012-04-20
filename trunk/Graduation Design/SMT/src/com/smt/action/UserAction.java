@@ -61,16 +61,15 @@ public class UserAction extends BaseActionSupport {
 	 * @return
 	 */
 	public String register() {
-		
+
 		if (!configurationService.load().isAllowRegister()) {
 			setInputStreamValue("pause");
 			return "result";
 		}
 
 		// Check null
-		if (user != null
-				&& user.getEmail() != null && user.getEmail().length() > 0
-				&& user.getPassword() != null
+		if (user != null && user.getEmail() != null
+				&& user.getEmail().length() > 0 && user.getPassword() != null
 				&& user.getPassword().length() > 0) {
 
 			// Encrypt the password.
@@ -179,6 +178,20 @@ public class UserAction extends BaseActionSupport {
 			}
 		}
 		return "error";
+	}
+
+	public String infoModify() {
+
+		User login_user = (User) session.get(Constants.LOGIN_USER);
+		
+		if (login_user != null) {
+			user.setUsername(login_user.getUsername());
+			User new_user = userService.modify(user);
+			session.put(Constants.LOGIN_USER, new_user);
+			
+			return "success";
+		}
+		return null;
 	}
 
 	/**

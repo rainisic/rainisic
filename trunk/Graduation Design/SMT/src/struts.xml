@@ -31,6 +31,10 @@
 		<action name="index">
 			<result>/index.jsp</result>
 		</action>
+		
+		<action name="infoModify" class="com.smt.action.UserAction" method="infoModify">
+			<result type="redirect">/info.jsp</result>
+		</action>
 	</package>
 
 	<!-- User package. -->
@@ -48,6 +52,13 @@
 	<!-- Feed JSON package. -->
 	<package name="feed" extends="json-default" namespace="/feed">
 		<action name="*" class="com.smt.action.FeedAction" method="{1}">
+			<result name="success" type="json" />
+		</action>
+	</package>
+	
+	<!-- Comment -->
+	<package name="comment" extends="json-default" namespace="/comment">
+		<action name="*" class="com.smt.action.CommentAction" method="{1}">
 			<result name="success" type="json" />
 		</action>
 	</package>

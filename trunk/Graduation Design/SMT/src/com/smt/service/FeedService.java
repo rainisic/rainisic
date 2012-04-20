@@ -79,6 +79,7 @@ public class FeedService implements FeedServiceInterface {
 	 * @see com.smms.service.FeedServiceInterface#delete(int, int)
 	 */
 	@Override
+	@Transactional
 	public boolean delete(int id, int status) {
 		
 		// Get the feed to be delete.

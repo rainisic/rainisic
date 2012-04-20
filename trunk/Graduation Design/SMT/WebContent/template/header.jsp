@@ -17,7 +17,7 @@
 					<div><img src='<s:property value="#session.microblog_login_user.portrait"/>'></div>
 					<a><s:property value="#session.microblog_login_user.username"/></a>
 				</div>
-				<div class="message">
+<!-- 				<div class="message">
 					<div class="title">消息</div>
 					<ul class="content">
 						<li><a href="#">查看评论</a></li>
@@ -26,12 +26,12 @@
 						<li><a href="#">查看我</a></li>
 						<li><a href="#">查看通知</a></li>
 					</ul>
-				</div>
+				</div> -->
 				<div class="account">
 					<div class="title">账号</div>
 					<ul class="content">
-						<li><a href="#">账号设置</a></li>
-						<li><a href="#">个人资料</a></li>
+						<!-- <li><a href="#">账号设置</a></li> -->
+						<li><a href="info.jsp">个人资料</a></li>
 						<li><a href="user/logout">退出</a></li>
 					</ul>
 				</div>

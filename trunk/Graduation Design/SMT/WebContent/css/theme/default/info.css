@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+
+div.homePage { padding-top: 40px; }
+div.homePage section.content { display: inline-block; width: 760px; margin-left: 200px; background-color: #EEEEFF; opacity: 0.8; }
+
+.userInfoDiv {
+	padding-left: 10px;
+}
+.userInfoDiv label {
+	display: inline-block;
+	width: 100px;
+}
+
+footer.copyright div { width: 100%; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; }
+footer.copyright a { transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; }
+footer.copyright a:hover { color: #d00000; }
+footer.copyright * { text-decoration: none; color: gray; }

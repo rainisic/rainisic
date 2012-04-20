@@ -10,7 +10,7 @@
 <head>
 <base href="${basePath}">
 <meta charset="UTF-8">
-<title>Rainisic's Home</title>
+<title>我的主页</title>
 <link rel="stylesheet" type="text/css" href="css/theme/${ session.smms_theme }/home.css">
 <script type="text/javascript" src="js/lib/jquery/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
@@ -31,7 +31,7 @@
 					<div class="newFeedDiv">
 						<div class="newFeedTitle">What's News? Feed it!</div>
 						<div class="textareaDiv">
-							<textarea class="newFeed"></textarea>
+							<textarea class="newFeed" placeholder='请输入内容'></textarea>
 						</div>
 						<div class="submitDiv">
 							<span class="wordCount">还能输入 <a>255</a> 字</span>

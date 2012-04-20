@@ -22,11 +22,33 @@ function initialize() {
  */
 function addActionListener() {
 	
+	// Add feed action listener.
+	addFeedActionListener();
+	
 	// Feed publish button clicked.
 	feedPublishButtonClickActionPerformed();
 	
 	// Feed text area key up action performed.
 	feedTextAreaKeyUpActionPerformed();
+	
+	$(".commentDiv .submit").live("click", function() {
+		
+		var target = $(this).parents(".feed");
+		
+		$.ajax({
+			type: "post",
+			url: "comment/publish",
+			data: 	"comment.content=" + target.find("textarea").val() +
+					"&feed.id=" + target.attr("id"),
+			dataType: "json",
+			success: function(result) {
+				if (result.comment.id > 0) {
+					target.find(".comments").append("<div>#" + ($(".comments > div").size() + 1) + "：&nbsp;&nbsp;&nbsp;&nbsp;" + target.find("textarea").val() + "</div>");
+					target.find("textarea").val("");
+				}
+			}
+		});
+	});
 }
 
 /**
@@ -51,7 +73,6 @@ function loadFeeds() {
 					$(newFeedDOMs).each(function() {
 						$(".feeds").prepend(this);
 					});
-					addFeedActionListener(newFeedDOMs);
 				}
 				
 				// Check even more.
@@ -77,7 +98,6 @@ function loadFeeds() {
 					$(newFeedDOMs).each(function() {
 						$(".feeds").prepend(this);
 					});
-					addFeedActionListener(newFeedDOMs);
 				}
 				
 				// Check even more.
@@ -114,7 +134,6 @@ function feedPublishButtonClickActionPerformed() {
 						$(newFeedDOMs).each(function() {
 							$(".feeds").prepend(this);
 						});
-						addFeedActionListener(newFeedDOMs);
 						
 						// Clear the text area.
 						$("textarea.newFeed").val("");
