@@ -104,24 +104,18 @@ public class UserService implements UserServiceInterface {
 
 		if (persistentUser != null) {
 
-			// Check new data availability.
-			if (!user.getNickname().equals(persistentUser.getNickname())
-					&& userDao.query(user.getNickname()) == null
-					&& !user.getEmail().equals(persistentUser.getEmail())
-					&& userDao.query(user.getEmail()) == null) {
-
-				// Set new values.
+			// Set new values.
+			if (user.getPassword() != null && user.getPassword().length() > 0)
 				persistentUser.setPassword(user.getPassword());
-				persistentUser.setNickname(user.getNickname());
-				persistentUser.setEmail(user.getEmail());
-				persistentUser.setGender(user.getGender());
-				persistentUser.setDescription(user.getDescription());
+			persistentUser.setNickname(user.getNickname());
+			persistentUser.setEmail(user.getEmail());
+			persistentUser.setGender(user.getGender());
+			persistentUser.setDescription(user.getDescription());
 
-				// Update.
-				userDao.update(persistentUser);
+			// Update.
+			userDao.update(persistentUser);
 
-				return persistentUser;
-			}
+			return persistentUser;
 		}
 		return null;
 	}
@@ -214,13 +208,13 @@ public class UserService implements UserServiceInterface {
 		User persistentUser = userDao.query(user.getUsername());
 
 		if (persistentUser != null) {
-			
+
 			// Change status.
 			persistentUser.setStatus(status);
-			
+
 			// Update the user.
 			userDao.save(persistentUser);
-			
+
 			return true;
 		}
 		return false;

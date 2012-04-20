@@ -33,10 +33,10 @@ public class FeedAction extends BaseActionSupport {
 
 	/** Feed list. */
 	private List<Feed> feeds;
-	
+
 	/** Feed DTO. */
 	private FeedDto feedDto;
-	
+
 	/** Feed. */
 	private Feed feed;
 
@@ -45,6 +45,8 @@ public class FeedAction extends BaseActionSupport {
 
 	/** Page. */
 	private Page page;
+	
+	private String result;
 
 	/**
 	 * Publish new feed.
@@ -52,17 +54,17 @@ public class FeedAction extends BaseActionSupport {
 	 * @return
 	 */
 	public String publish() {
-		
+
 		// Get user from session.
 		User user = (User) session.get(Constants.LOGIN_USER);
-		
+
 		// Check user and feed.
 		if (user != null && feedDto != null) {
-			
+
 			// Publish.
 			feedDto.setAuthor(user);
 			feed = feedService.publish(feedDto);
-			
+
 			// Check result.
 			if (feed.getId() > 0) {
 				return "success";
@@ -118,6 +120,20 @@ public class FeedAction extends BaseActionSupport {
 		return null;
 	}
 
+	public String delete() {
+
+		if (feed.getId() > 0) {
+			if (feedService.delete(feed.getId(), Feed.DELETE_BY_USER)) {
+				result = "success";
+			} else {
+				result = "failed";
+			}
+		} else {
+			result = "failed";
+		}
+		return SUCCESS;
+	}
+
 	/**
 	 * @param feedService
 	 *            the feedService to set
@@ -134,7 +150,8 @@ public class FeedAction extends BaseActionSupport {
 	}
 
 	/**
-	 * @param feed the feed to set
+	 * @param feed
+	 *            the feed to set
 	 */
 	public void setFeed(Feed feed) {
 		this.feed = feed;
@@ -148,7 +165,8 @@ public class FeedAction extends BaseActionSupport {
 	}
 
 	/**
-	 * @param feedDto the feedDto to set
+	 * @param feedDto
+	 *            the feedDto to set
 	 */
 	public void setFeedDto(FeedDto feedDto) {
 		this.feedDto = feedDto;
@@ -197,5 +215,19 @@ public class FeedAction extends BaseActionSupport {
 	 */
 	public void setPage(Page page) {
 		this.page = page;
+	}
+
+	/**
+	 * @return the result
+	 */
+	public String getResult() {
+		return result;
+	}
+
+	/**
+	 * @param result the result to set
+	 */
+	public void setResult(String result) {
+		this.result = result;
 	}
 }
