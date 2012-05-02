@@ -236,20 +236,19 @@ div.background > header {
 }
 
 .categories ul.nav li a {
+	display: block;
+	background: #cbcbcb url(../images/border.png) no-repeat;
+	padding: 7px 15px 7px 15px;
+	color: transparent;
+	width: 100px;
+	text-decoration: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
-	background: #cbcbcb url(../images/border.png) no-repeat;
-	color: #174867;
-	padding: 7px 15px 7px 15px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	width: 100px;
-	display: block;
-	text-decoration: none;
 	box-shadow: 2px 2px 4px #888;
-	color: transparent;
 }
 
 .categories:hover ul.nav li a {
@@ -265,7 +264,7 @@ div.background > header {
 .categories ul.nav li a.active {
 	background: #ebebeb url(../images/border.png) no-repeat;
 	color: red;
-	padding: 7px 15px 7px 130px;
+	padding: 7px 15px 7px 100px;
 }
 
 .categories:hover ul.nav li a.active {
