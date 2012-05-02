@@ -262,6 +262,12 @@ div.background > header {
 	padding: 7px 15px 7px 30px;
 }
 
+.categories ul.nav li a.active {
+	background: #ebebeb url(../images/border.png) no-repeat;
+	color: red;
+	padding: 7px 15px 7px 130px;
+}
+
 .categories:hover ul.nav li a.active {
 	background: #ebebeb url(../images/border.png) no-repeat;
 	color: red;
