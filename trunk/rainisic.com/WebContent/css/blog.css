@@ -249,10 +249,21 @@ div.background > header {
 	display: block;
 	text-decoration: none;
 	box-shadow: 2px 2px 4px #888;
+	color: transparent;
 }
 
-.categories ul.nav li a:hover {
+.categories:hover ul.nav li a {
+	color: black;
+}
+
+.categories:hover ul.nav li a:hover {
 	background: #ebebeb url(../images/border.png) no-repeat;
 	color: #67a5cd;
+	padding: 7px 15px 7px 30px;
+}
+
+.categories:hover ul.nav li a.active {
+	background: #ebebeb url(../images/border.png) no-repeat;
+	color: red;
 	padding: 7px 15px 7px 30px;
 }
