@@ -24,8 +24,8 @@ div.content > header {
 }
 
 div.content > header div.logo {
-	width: 396px;
-	height: 73px;
+	width: 400px;
+	height: 75px;
 	background: url("../images/logo.png") no-repeat;
 	float: left;
 	margin-top: 4px;
