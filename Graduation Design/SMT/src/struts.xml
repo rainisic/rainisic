@@ -46,6 +46,7 @@
 			</result>
 			<result name="logout_success" type="redirect">/</result>
 			<result name="homepage">/home.jsp</result>
+			<result name="friend_success" type="chain">homepage</result>
 		</action>
 	</package>
 
