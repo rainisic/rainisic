@@ -186,11 +186,26 @@ public class UserAction extends BaseActionSupport {
 		
 		if (login_user != null) {
 			user.setUsername(login_user.getUsername());
+			user.setPortrait("upload/portrait/" + user.getPortrait());
 			User new_user = userService.modify(user);
 			session.put(Constants.LOGIN_USER, new_user);
 			
 			return "success";
 		}
+		return null;
+	}
+	
+	public String addFriend() {
+		
+		User login_user = (User) session.get(Constants.LOGIN_USER);
+		
+		if (login_user != null) {
+			
+			login_user = userService.addFriend(login_user.getUsername(), user.getUsername());
+			session.put(Constants.LOGIN_USER, login_user);
+			return "friend_success";
+		}
+		
 		return null;
 	}
 

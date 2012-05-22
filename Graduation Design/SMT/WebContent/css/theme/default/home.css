@@ -22,8 +22,9 @@ section.content .userInfoDiv .data .info {  }
 section.content .userInfoDiv .data .info .gender.m { background: url("../../../images/m.png") no-repeat; }
 section.content .userInfoDiv .data .info .gender.f { background: url("../../../images/f.png") no-repeat; }
 section.content .userInfoDiv .data .description { height: 90px; margin: 5px 0; overflow: hidden; }
-section.content .userInfoDiv .data .operation .funs { display: inline-block; height: 25px; width: 80px; text-align: center; vertical-align: middle; line-height: 25px; border: 1px #008800 solid; border-radius: 5px; background-color: #91D925; cursor: pointer; }
-section.content .userInfoDiv .data .operation .funs:hover { background-color: #89D900; }
+section.content .userInfoDiv .data .operation .fans { display: inline-block; height: 25px; width: 80px; text-align: center; vertical-align: middle; line-height: 25px; border: 1px #008800 solid; border-radius: 5px; background-color: #91D925; cursor: pointer; text-decoration: none; color: black; }
+section.content .userInfoDiv .data .operation .fansed { display: inline-block; height: 25px; width: 80px; text-align: center; vertical-align: middle; line-height: 25px; border: 1px #008800 solid; border-radius: 5px; background-color: #fcffa8; cursor: pointer; text-decoration: none; color: black; }
+section.content .userInfoDiv .data .operation .fans:hover { background-color: #89D900; }
 
 section.content .feeds { padding: 0 30px; width: 700px; border-top: 1px silver dashed; }
 section.content .feeds article.feed { width: 100%; border-bottom: 1px silver dotted; margin: 20px 0; }

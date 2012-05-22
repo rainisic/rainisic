@@ -9,13 +9,13 @@
 	<div class="textAreaLimit">
 		<div class="logo"><img src="images/logo.png"/></div>
 		<s:if test="#session.microblog_login_user != null">
-			<div class="search">
+			<!-- <div class="search">
 				<input class="searchInput" type="text" placeholder="Search someone..."><a class="searchButton" title="Search">&nbsp;</a>
-			</div>
+			</div> -->
 			<div class="userInfo">
 				<div class="username">
 					<div><img src='<s:property value="#session.microblog_login_user.portrait"/>'></div>
-					<a><s:property value="#session.microblog_login_user.username"/></a>
+					<a><s:property value="#session.microblog_login_user.nickname"/></a>
 				</div>
 <!-- 				<div class="message">
 					<div class="title">消息</div>

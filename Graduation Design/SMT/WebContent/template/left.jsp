@@ -13,8 +13,8 @@
 		<div class="userInfo">
 			<img src='<s:property value="#session.microblog_login_user.portrait"/>'/>
 			<div class="texts">
-				<a class="username" title='<s:property value="#session.microblog_login_user.username"/>'><s:property value="#session.microblog_login_user.username"/></a>
-				<a class="userData" href="info.jsp">查看用户资料</a>
+				<a class="username" title='<s:property value="#session.microblog_login_user.nickname"/>'><s:property value="#session.microblog_login_user.nickname"/></a>
+				<!-- <a class="userData" href="info.jsp">查看用户资料</a> -->
 			</div>
 		</div>
 <!-- 关注、粉丝、微博个数，时间原因没能实现

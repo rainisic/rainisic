@@ -60,6 +60,10 @@ public class FeedAction extends BaseActionSupport {
 
 		// Check user and feed.
 		if (user != null && feedDto != null) {
+			
+			// Process the invalid character
+			feedDto.setContent(feedDto.getContent().replaceAll("<", "&lt;"));
+			feedDto.setContent(feedDto.getContent().replaceAll(">", "&gt;"));
 
 			// Publish.
 			feedDto.setAuthor(user);

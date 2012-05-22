@@ -14,10 +14,17 @@
 <title>个人资料</title>
 <link rel="stylesheet" type="text/css" href="css/theme/${ session.smms_theme }/info.css">
 <script type="text/javascript" src="js/lib/jquery/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript">
 	var host = "${user.username}";
 	var username = "${session.microblog_login_user.username}";
+	
+$(document).ready(function() {
+	
+	$("select#portrait").change(function() {
+		console.log($(this).val());
+		$("#preview").attr("src", "upload/portrait/" + $(this).val());
+	});
+});
 </script>
 </head>
 <body>
@@ -39,19 +46,30 @@
 							<input id="nickname" name="user.nickname" type="text" value="${ session.microblog_login_user.nickname }"/>					
 						</p>
 						<p>
-							<label for="description">个人描述：</label>
-							<input id="description" name="user.description" type="text" value="${ session.microblog_login_user.description }"/>					
-						</p>
-						<p>
 							<label>性别：</label>
-							<input id="male" type="radio" value="M" name="user.gender" checked="checked">
+							<input id="male" type="radio" value="M" name="user.gender" <s:if test="#session.microblog_login_user.gender == \"M\"">checked="checked"</s:if>>
 							<label for="male" style="display: inline;">男</label>
-							<input id="female" type="radio" value="F" name="user.gender">
+							<input id="female" type="radio" value="F" name="user.gender" <s:if test="#session.microblog_login_user.gender == \"F\"">checked="checked"</s:if>>
 							<label id="female" style="display: inline;">女</label>
 						</p>
 						<p>
-							<label for="email">个人描述：</label>
+							<label for="email">个人邮箱：</label>
 							<input id="email" name="user.email" type="email" value="${ session.microblog_login_user.email }"/>					
+						</p>
+						<p><label for="description">个人描述：</label></p>
+						<p><textarea name="user.description">${ session.microblog_login_user.description }</textarea></p>
+						<p>
+							<span>
+								<label for="portrait">选择头像</label>
+								<select id="portrait" name="user.portrait">
+									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/default.jpg\"">selected="selected"</s:if>>default.jpg</option>
+									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/1.jpg\"">selected="selected"</s:if>>1.jpg</option>
+								</select>
+							</span>
+							<br/><br/>
+							<span>
+								<img id="preview" src="${ session.microblog_login_user.portrait }">
+							</span>
 						</p>
 						<h2>密码修改(如不修改则无需填写)</h2>
 						<p>

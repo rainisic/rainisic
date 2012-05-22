@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.util.*, com.smt.entity.*"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -42,30 +42,50 @@
 				<s:else>
 					<div class="userInfoDiv">
 						<div class="portrait">
-							<img src="upload/portrait/default.jpg"/>
+							<img src="${ user.portrait }"/>
 						</div><div class="data">
-							<div class="username">Rainisic</div>
+							<div class="username">${ user.username }</div>
 							<div class="info">
-								<span class="gender m">&nbsp;&nbsp;&nbsp;
-								</span><span class="address">北京
-								</span>
+								<s:if test="user.gender == \"M\"">
+									<span class="gender m">&nbsp;&nbsp;&nbsp;</span>
+								</s:if>
+								<s:else>
+									<span class="gender f">&nbsp;&nbsp;&nbsp;</span>
+								</s:else>
 							</div>
-							<div class="description">
-								这里写入个人简介~
-							</div>
-							<div class="operation">
-								<a class="funs">+ 加关注
-								</a>
-							</div>
+							<div class="description">${ user.description }</div>
+							<s:if test="#session.microblog_login_user != null">
+								<div class="operation">
+									<%
+									User loginUser = (User)session.getAttribute("microblog_login_user");
+									User home = (User)request.getAttribute("user");
+									boolean processed = false;
+									for (Iterator<User> iter = loginUser.getFriends().iterator(); iter.hasNext();) {
+										User friend = iter.next();
+										if (friend.getUsername().equals(home.getUsername())
+											|| friend.getNickname().equals(home.getNickname())
+											|| friend.getEmail().equals(home.getEmail())) {
+											out.print("<a class=\"fansed\">- 已关注</a>");
+											processed = true;
+											break;
+										}
+										
+									}
+									if (!processed) {
+										out.print("<a class=\"fans\" href=\"user/addFriend?user.username=" + home.getUsername() + "\">+ 加关注</a>");
+									}
+									%>
+								</div>
+							</s:if>
 						</div>
 					</div>
 				</s:else>
 				<div class="feeds">
 					<article id="loading" class="feed">
-						<div>
+						<!-- <div>
 							<img src="images/loading.gif"/>
 							<div>Loading...</div>
-						</div>
+						</div> -->
 					</article>
 <!-- 					<article class="feed">
 						<div class="portrait"><img src="upload/portrait/default.jpg"/>
