@@ -110,6 +110,7 @@ public class UserService implements UserServiceInterface {
 			persistentUser.setNickname(user.getNickname());
 			persistentUser.setEmail(user.getEmail());
 			persistentUser.setGender(user.getGender());
+			persistentUser.setPortrait(user.getPortrait());
 			persistentUser.setDescription(user.getDescription());
 
 			// Update.
