@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.smt.dao.UserDaoInterface;
 import com.smt.entity.User;
+import com.smt.util.MD5Encryptor;
 
 /**
  * @author Rainisic
@@ -105,8 +106,9 @@ public class UserService implements UserServiceInterface {
 		if (persistentUser != null) {
 
 			// Set new values.
-			if (user.getPassword() != null && user.getPassword().length() > 0)
-				persistentUser.setPassword(user.getPassword());
+			if (user.getPassword() != null && user.getPassword().length() > 0) {
+				persistentUser.setPassword(MD5Encryptor.encrypt(user.getPassword()));
+			}
 			persistentUser.setNickname(user.getNickname());
 			persistentUser.setEmail(user.getEmail());
 			persistentUser.setGender(user.getGender());

@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+div.homePage { padding-top: 40px; }
+div.homePage section.content { display: inline-block; width: 760px; margin-left: 200px; background-color: #EEEEFF; opacity: 0.8; }
+
+section.content .newFeedDiv { width: 700px; padding: 30px; }
+section.content .newFeedDiv .newFeedTitle { font-size: 15px; font-weight: bold; padding-bottom: 10px; padding-left: 5px; }
+section.content .newFeedDiv textarea.newFeed { width: 694px; height: 100px; resize: none; border: 1px silver solid; box-shadow: 1px 2px 5px black; }
+section.content .newFeedDiv div.submitDiv { margin-top: 5px; text-align: right; }
+section.content .newFeedDiv div.submitDiv button.submit { width: 80px; height: 30px; margin-right: 5px; font-style: italic; border: 1px silver solid; box-shadow: 1px 1px 3px black; transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; cursor: pointer; }
+section.content .newFeedDiv div.submitDiv button.submit:hover { background-color: #CCCCCC; }
+section.content .newFeedDiv div.submitDiv span.wordCount { padding-right: 20px; color: green; }
+section.content .newFeedDiv div.submitDiv span.wordCount a { font-family: Constantia,Georgia; font-size: 22px; }
+section.content .newFeedDiv div.submitDiv span.wordCount a.overflow { color: red; }
+
+section.content .userInfoDiv { width: 700px; padding: 30px; }
+section.content .userInfoDiv .portrait { display: inline-block; }
+section.content .userInfoDiv .portrait img { width: 180px; height: 180px; border: 1px silver solid; }
+section.content .userInfoDiv .data { width: 498px; display: inline-block; padding-left: 20px; vertical-align: top; }
+section.content .userInfoDiv .data .username { text-align: left; font-size: 18px; font-weight: bold; padding: 5px 0; }
+section.content .userInfoDiv .data .info {  }
+section.content .userInfoDiv .data .info .gender.m { background: url("../../../images/m.png") no-repeat; }
+section.content .userInfoDiv .data .info .gender.f { background: url("../../../images/f.png") no-repeat; }
+section.content .userInfoDiv .data .description { height: 90px; margin: 5px 0; overflow: hidden; }
+section.content .userInfoDiv .data .operation .fans { display: inline-block; height: 25px; width: 80px; text-align: center; vertical-align: middle; line-height: 25px; border: 1px #008800 solid; border-radius: 5px; background-color: #91D925; cursor: pointer; text-decoration: none; color: black; }
+section.content .userInfoDiv .data .operation .fansed { display: inline-block; height: 25px; width: 80px; text-align: center; vertical-align: middle; line-height: 25px; border: 1px #008800 solid; border-radius: 5px; background-color: #fcffa8; cursor: pointer; text-decoration: none; color: black; }
+section.content .userInfoDiv .data .operation .fans:hover { background-color: #89D900; }
+
+section.content .feeds { padding: 0 30px; width: 700px; border-top: 1px silver dashed; }
+section.content .feeds article.feed { width: 100%; border-bottom: 1px silver dotted; margin: 20px 0; }
+section.content .feeds article.feed .portrait { display: inline-block; width: 60px; margin-right: 10px; }
+section.content .feeds article.feed .portrait img { width: 50px; height: 50px; }
+section.content .feeds article.feed .feedContent { display: inline-block; width: 630px; min-height: 50px; vertical-align: top; }
+section.content .feeds article.feed .feedContent .reference { position: relative; border: 1px gray solid; border-radius: 5px; background-color: #DDDDDD; margin-top: 10px; padding: 10px; }
+section.content .feeds article.feed .feedContent .reference span.border { font-size: 32px; position: absolute; color: gray; top: -22px; left: 20px; }
+section.content .feeds article.feed .feedContent .reference span.color { font-size: 31px; position: absolute; color: #DDDDDD; top: -21px; left: 20px; }
+section.content .feeds article.feed .feedInfo { display: inline-block; width: 40%; font-size: 10px; color: gray; }
+section.content .feeds article.feed .operation { display: inline-block; width: 60%; text-align: right; padding: 5px 0; }
+section.content .feeds article.feed .operation a { cursor: pointer; }
+section.content .feeds article.feed .commentDiv { border: 1px silver solid; }
+section.content .feeds article.feed .commentDiv .comments div { padding: 5px; }
+.submit { width: 80px; height: 30px; margin: 5px; font-style: italic; border: 1px silver solid; box-shadow: 1px 1px 3px black; transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; cursor: pointer; }
+.submit:hover {  background-color: #CCCCCC;  }
+section.content .feeds article.feed .commentDiv .comments div:nth-child(2n+1) { background-color: #FFFFFF; }
+section.content .feeds article.feed .commentDiv .comments div:nth-child(2n) { background-color: #FFFFEE; }
+section.content .feeds article.feed .commentDiv textarea { width: 100%; height: 50px; border: none; resize: none; }
+
+section.content .feeds #loading {
+	text-align: center;
+}
+
+footer.copyright div { width: 100%; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; }
+footer.copyright a { transition: all 500ms; -webkit-transition: all 500ms; -moz-transition: all 500ms; -o-transition: all 500ms; }
+footer.copyright a:hover { color: #d00000; }
+footer.copyright * { text-decoration: none; color: gray; }
