@@ -37,6 +37,7 @@ $(document).ready(function() {
 				<div class="userInfoDiv">
 					<form action="user/infoModify" method="post">	
 						<h2>个人资料修改</h2>
+						<hr/>
 						<p>
 							<label for="username">用户名：</label>
 							<input id="username" name="user.username" type="text" value="${ session.microblog_login_user.username }" readonly="readonly" disabled="disabled"/>					
@@ -64,6 +65,10 @@ $(document).ready(function() {
 								<select id="portrait" name="user.portrait">
 									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/default.jpg\"">selected="selected"</s:if>>default.jpg</option>
 									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/1.jpg\"">selected="selected"</s:if>>1.jpg</option>
+									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/2.jpg\"">selected="selected"</s:if>>2.jpg</option>
+									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/3.jpg\"">selected="selected"</s:if>>3.jpg</option>
+									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/4.jpg\"">selected="selected"</s:if>>4.jpg</option>
+									<option <s:if test="#session.microblog_login_user.portrait == \"upload/portrait/5.jpg\"">selected="selected"</s:if>>5.jpg</option>
 								</select>
 							</span>
 							<br/><br/>
@@ -72,6 +77,7 @@ $(document).ready(function() {
 							</span>
 						</p>
 						<h2>密码修改(如不修改则无需填写)</h2>
+						<hr/>
 						<p>
 							<label for="oldPassword">原密码：</label>
 							<input id="oldPassword" type="password">
