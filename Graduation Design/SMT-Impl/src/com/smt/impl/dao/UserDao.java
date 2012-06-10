@@ -70,15 +70,15 @@ public class UserDao {
 			while (rs.next()) {
 				User u = new User();
 				u.setId(rs.getInt(1));
-				u.setDescription(rs.getString(2));
-				u.setEmail(rs.getString(3));
-				u.setGender(rs.getString(4));
-				u.setNickname(rs.getString(5));
-				u.setPassword(rs.getString(6));
+				u.setDescription(rs.getString(2) != null ? rs.getString(2) : "");
+				u.setEmail(rs.getString(3) != null ? rs.getString(3) : "");
+				u.setGender(rs.getString(4) != null ? rs.getString(4) : "");
+				u.setNickname(rs.getString(5) != null ? rs.getString(5) : "");
+				u.setPassword(rs.getString(6) != null ? rs.getString(6) : "");
 				u.setPermission(rs.getInt(7));
-				u.setPortrait(rs.getString(8));
+				u.setPortrait(rs.getString(8) != null ? rs.getString(8) : "");
 				u.setStatus(rs.getInt(9));
-				u.setUsername(rs.getString(10));
+				u.setUsername(rs.getString(10) != null ? rs.getString(10) : "");
 				result.add(u);
 			}
 

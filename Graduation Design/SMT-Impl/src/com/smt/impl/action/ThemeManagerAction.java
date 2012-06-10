@@ -34,7 +34,7 @@ public class ThemeManagerAction extends ActionSupport {
 	public String loadThemes() {
 		contents = new LinkedList<String[]>();
 		contents.add(new String[] { "default", "默认主题" });
-		contents.add(new String[] { "fashion", "时尚主题" });
+		contents.add(new String[] { "white", "时尚主题" });
 		return SUCCESS;
 	}
 
