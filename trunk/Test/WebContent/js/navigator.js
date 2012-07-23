@@ -49,5 +49,5 @@ function rewriteURL(url) {
  * Reset content view.
  */
 function reset() {
-	$("section.content").html("");
+	$(".content").html("");
 }
