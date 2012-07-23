@@ -35,34 +35,23 @@ public class ArticleServlet extends HttpServlet {
 
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
-		
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 
 		Map<String, Object> json = new HashMap<String, Object>();
-		List<ArticleVo> articles = new LinkedList<ArticleVo>();
-		for (int i = 0; i < 0; i++) {
-			ArticleVo article = new ArticleVo();
-			article.setTitle("Title");
-			article.setSummary("This is the summary");
-			article.setContent("This is the content");
-			Category category = new Category();
-			category.setId(1);
-			category.setName("Java");
-			category.setUrl("java");
-			article.setCategory(category);
-			article.setTags("Java , Linux");
-			article.setFakepath("test.html");
-			article.setPublishTime(new SimpleDateFormat("yyyy-mm-dd hh:MM:ss")
-					.format(Calendar.getInstance().getTime()));
-			articles.add(article);
-		}
+		ArticleVo article = new ArticleVo();
+		article.setTitle("Title");
+		article.setSummary("This is the summary");
+		article.setContent("This is the content");
+		Category category = new Category();
+		category.setId(1);
+		category.setName("Java");
+		category.setUrl("java");
+		article.setCategory(category);
+		article.setTags("Java , Linux");
+		article.setFakepath("test.html");
+		article.setPublishTime(new SimpleDateFormat("yyyy-mm-dd hh:MM:ss")
+				.format(Calendar.getInstance().getTime()));
 
-		json.put("articles", articles);
+		json.put("article", article);
 
 		JSONObject jsonObject = JSONObject.fromObject(json);
 		response.getWriter().print(jsonObject);

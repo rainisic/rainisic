@@ -1,7 +1,7 @@
-/* @(#) navigator.js
- * JavaScript for navigator.
+/**
+ * Load navigator.
  */
-$(document).ready(function() {
+function loadNavigator() {
 	
 	// Navigator item clicked.
 	$("body > nav li").click(function() {
@@ -16,6 +16,9 @@ $(document).ready(function() {
 			// Rewrite URL.
 			rewriteURL($(this).attr("id"));
 			
+			// Reset content view.
+			reset();
+			
 			// Call processor.
 			try {
 				eval($(this).attr("id")).call();
@@ -24,7 +27,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-});
+}
 
 /**
  * Rewrite the URL.
@@ -40,4 +43,11 @@ function rewriteURL(url) {
 	 * Reference:	http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html#dom-history-replacestate
 	 */
 	history.replaceState("", "", basepath + url);
+}
+
+/**
+ * Reset content view.
+ */
+function reset() {
+	$("section.content").html("");
 }

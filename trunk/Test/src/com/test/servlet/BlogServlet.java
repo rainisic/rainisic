@@ -33,13 +33,6 @@ public class BlogServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
 		Map<String, Object> json = new HashMap<String, Object>();
 		List<ArticleVo> articles = new LinkedList<ArticleVo>();
 		for (int i = 0; i < 10; i++) {

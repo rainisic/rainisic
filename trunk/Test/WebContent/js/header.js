@@ -1,7 +1,6 @@
-/*
- * JavaScript for header.
+/**
+ * Load header.
  */
-
-$(document).ready(function() {
-	// Nothing to do ...
-});
+function loadHeader() {
+	// Noting to do ...
+}
