@@ -104,18 +104,22 @@ article>h2>a:hover {
 	float: right;
 	color: black;
 	border: 3px #333333 solid;
-	background-color: white;
+	background-image: -webkit-radial-gradient(circle, black, white);
 	border-radius: 20px;
 	text-align: center;
-	line-height: 24px;
+	line-height: 20px;
 	vertical-align: middle;
 	font-size: 25px;
 	cursor: pointer;
 	box-shadow: 0px 0px 10px white;
+	transition: all 200ms;
+	-moz-transition: all 200ms;
+	-webkit-transition: all 200ms;
+	-o-transition: all 200ms;
 }
 
 .displayArticle .closeX:hover {
-	background-color: #FF3333;
+	background-image: -webkit-radial-gradient(circle, red, white);
 }
 
 .displayArticle .articleView {
