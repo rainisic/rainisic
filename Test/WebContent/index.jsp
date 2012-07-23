@@ -10,6 +10,7 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="css/frame.css">
+<link rel="stylesheet" type="text/css" href="css/blog.css">
 </head>
 <body>
 
@@ -57,6 +58,7 @@
 
 	<script type="text/javascript" src="js/jquery/jquery.js"></script>
 	<script type="text/javascript" src="js/constant.js"></script>
+	<script type="text/javascript" src="js/frame.js"></script>
 	<script type="text/javascript" src="js/header.js"></script>
 	<script type="text/javascript" src="js/navigator.js"></script>
 	<script type="text/javascript" src="js/controller.js"></script>
