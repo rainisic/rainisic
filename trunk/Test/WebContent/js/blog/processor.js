@@ -56,7 +56,7 @@ function requestBlogData() {
 function processBlogContent() {
 	
 	// Append display article container.
-	$(".sidebar").append("<div class=\"displayArticle\"><div class=\"closeX\">×</div><div class=\"articleView\"></div></div><div class=\"cover\"></div>");
+	$(".sidebar").append("<div class=\"displayArticle\"><div class=\"closeX\"></div><div class=\"articleView\"></div></div><div class=\"cover\"></div>");
 }
 
 /**
