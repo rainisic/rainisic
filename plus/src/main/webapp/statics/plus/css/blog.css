@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+
+article {
+	padding: 20px 20px 10px 20px;
+	border-left: 1px silver solid;
+	border-right: 1px silver solid;
+	border-bottom: 1px silver dashed;
+	cursor: pointer;
+}
+
+article:first-child {
+	border-top: 1px silver solid;
+}
+
+article:last-child {
+	border-bottom: 1px silver solid;
+}
+
+article:nth-child(2n) {
+	background-color: #FFFFEE;
+}
+
+article:nth-child(2n+1) {
+	background-color: #EEFFEE;
+}
+
+article:hover {
+	background-color: #EEEEEE;
+}
+
+article>h2 {
+	margin-top: 0;
+}
+
+article>h2>a {
+	text-decoration: none;
+	color: black;
+	transition: all 200ms;
+	-moz-transition: all 200ms;
+	-webkit-transition: all 200ms;
+	-o-transition: all 200ms;
+}
+
+article>h2>a:hover {
+	color: red;
+}
+
+.category {
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.category>a {
+	text-decoration: none;
+	color: #FF6464;
+}
+
+.summary {
+	margin: 20px 0px;
+}
+
+.tags {
+	padding-left: 20px;
+}
+
+.tags>a {
+	text-decoration: none;
+	color: #6464FF;
+}
+
+.timestamp {
+	font-size: 12px;
+	text-align: right;
+}
+
+.loading {
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	border-left: 1px silver solid;
+	border-bottom: 1px silver solid;
+	border-right: 1px silver solid;
+}
+
+.displayDialog {
+	display: none;
+	-webkit-animation: init-articleDialog 500ms ease;
+}
+.displayArticle {
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	bottom: 10%;
+	right: 10%;
+	border: 3px black solid;
+	background-color: white;
+	z-index: 19;
+	box-shadow: 0px 0px 10px white;
+}
+
+.displayArticle .closeX {
+	width: 20px;
+	height: 20px;
+	margin-top: -12px;
+	margin-right: -12px;
+	float: right;
+	color: black;
+	border: 3px #333333 solid;
+	background-color: white;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 24px;
+	vertical-align: middle;
+	font-size: 25px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px white;
+}
+
+.displayArticle .closeX:hover {
+	background-color: #FF3333;
+}
+
+.displayArticle .articleView {
+	padding: 20px;
+}
+
+.displayArticle .articleView h2 {
+	text-align: center;
+}
+
+.displayArticle .articleView .articleContent {
+	margin: 20px 0px;
+}
+
+.displayArticle .articleView .articleCategory {
+	padding: 10px;
+}
+
+.displayArticle .articleView .articleTags {
+	padding: 10px;
+}
+
+.displayArticle .articleView .articleTimestamp {
+	text-align: right;
+	padding: 10px;
+}
+
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 18;
+}
+
+@-webkit-keyframes init-articleDialog {
+0%   { opacity: 0; }
+100%   { opacity: 1; }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+
+	<!-- Default actions. -->
+	<package name="default" extends="struts-default" namespace="/">
+
+		<!-- Define custom interceptor stack. -->
+		<interceptors>
+			<interceptor name="environment"
+				class="com.rainisic.plus.interceptor.EnvironmentInterceptor" />
+			<interceptor-stack name="customStack">
+				<interceptor-ref name="environment" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<!-- Default interceptor stack. -->
+		<default-interceptor-ref name="customStack" />
+
+		<!-- Index -->
+		<action name="index" class="com.rainisic.plus.action.IndexAction">
+			<result type="dispatcher">/index.jsp</result>
+		</action>
+
+		<!-- Blog -->
+		<action name="blog" class="com.rainisic.plus.action.ArticleAction"
+			method="list">
+			<result>/index.jsp</result>
+		</action>
+	</package>
+
+	<!-- Blog actions. -->
+	<package name="blog" extends="default" namespace="/blog">
+
+		<action name="" class="com.rainisic.plus.action.ArticleAction"
+			method="list">
+			<result name="success" type="dispatcher">/index.jsp</result>
+		</action>
+
+		<action name="article" class="com.rainisic.plus.action.ArticleAction"
+			method="load">
+			<result name="success" type="dispatcher">/index.jsp</result>
+			<result name="error" type="dispatcher">/index.jsp</result>
+		</action>
+		<action name="category" class="com.rainisic.plus.action.ArticleAction"
+			method="list">
+			<result name="success" type="dispatcher">/index.jsp</result>
+		</action>
+	</package>
+
+	<!-- AJAX Request below. -->
+	<package name="ajax-default" extends="json-default" namespace="/ajax">
+	</package>
+
+	<package name="ajax-blog" extends="ajax-default" namespace="/ajax/blog">
+		<action name="article_*" class="com.rainisic.plus.action.ArticleAction"
+			method="{1}">
+			<result name="success" type="json" />
+		</action>
+		<action name="category_*" class="com.rainisic.plus.action.CategoryAction"
+			method="{1}">
+			<result name="success" type="json" />
+		</action>
+	</package>
+</struts>
