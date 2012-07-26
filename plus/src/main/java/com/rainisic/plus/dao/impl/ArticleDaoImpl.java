@@ -6,70 +6,98 @@
  */
 package com.rainisic.plus.dao.impl;
 
-import java.util.Calendar;
-import java.util.LinkedList;
 import java.util.List;
-
+import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
-
 import com.rainisic.plus.dao.ArticleDao;
+import com.rainisic.plus.dao.BaseDaoSupport;
 import com.rainisic.plus.entity.Article;
 import com.rainisic.plus.entity.Category;
 import com.rainisic.plus.vo.Page;
 
 /**
+ * Article DAO implementation class.
+ * 
  * @author rainisic
- *
+ * @version 1.0.0
  */
 @Repository
-public class ArticleDaoImpl implements ArticleDao {
+public class ArticleDaoImpl extends BaseDaoSupport implements ArticleDao {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.rainisic.plus.dao.ArticleDao#get(int)
 	 */
 	@Override
 	public Article get(int id) {
-		Article article = new Article();
-		article.setId(1);
-		article.setTags("Java, Linux");
-		article.setTitle("title");
-		article.setContent("Content");
-		article.setSummary("summary");
-		article.setUrl("test");
-		article.setPublishTime(Calendar.getInstance());
-		Category category = new Category();
-		category.setId(1);
-		category.setName("Category");
-		category.setUrl("cate");
-		article.setCategory(category);
-		return article;
+		return (Article) sessionFactory.getCurrentSession().get(Article.class,
+				id);
 	}
 
-	/* (non-Javadoc)
-	 * @see com.rainisic.plus.dao.ArticleDao#list(com.rainisic.plus.vo.Page)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.rainisic.plus.dao.ArticleDao#get(java.lang.String)
 	 */
 	@Override
-	public List<Article> list(Page page) {
-		
-		List<Article> articles = new LinkedList<Article>();
-		for (int i = 0; i < 10; i ++) {
-			Article article = new Article();
-			article.setId(1);
-			article.setTags("Java, Linux");
-			article.setTitle("title");
-			article.setContent("Content");
-			article.setSummary("summary");
-			article.setUrl("test");
-			article.setPublishTime(Calendar.getInstance());
-			Category category = new Category();
-			category.setId(1);
-			category.setName("Category");
-			category.setUrl("cate");
-			article.setCategory(category);
-			articles.add(article);
-		}
-		
-		return articles;
+	public Article get(String url) {
+		return (Article) sessionFactory.getCurrentSession()
+				.createCriteria(Article.class).add(Restrictions.eq("url", url))
+				.list().iterator().next();
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.rainisic.plus.dao.ArticleDao#list(com.rainisic.plus.entity.Category,
+	 * com.rainisic.plus.vo.Page)
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Article> list(Category category, Page page) {
+		return sessionFactory.getCurrentSession().createCriteria(Article.class)
+				.add(Restrictions.eq("category", category))
+				.setMaxResults(page.getPageSize())
+				.setFirstResult(page.getCurrentPage() * page.getPageSize())
+				.list();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.rainisic.plus.dao.ArticleDao#list(com.rainisic.plus.vo.Page)
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Article> list(Page page) {
+		return sessionFactory.getCurrentSession().createCriteria(Article.class)
+				.setMaxResults(page.getPageSize())
+				.setFirstResult(page.getCurrentPage() * page.getPageSize())
+				.list();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.rainisic.plus.dao.ArticleDao#save(com.rainisic.plus.entity.Article)
+	 */
+	@Override
+	public int save(Article transientArticle) {
+		return (Integer) sessionFactory.getCurrentSession().save(
+				transientArticle);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.rainisic.plus.dao.ArticleDao#update(com.rainisic.plus.entity.Article)
+	 */
+	@Override
+	public void update(Article persistentArticle) {
+		sessionFactory.getCurrentSession().update(persistentArticle);
+	}
 }

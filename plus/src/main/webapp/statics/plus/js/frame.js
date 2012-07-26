@@ -1,3 +1,10 @@
+/**
+ * Public static values.
+ */
+{
+	var basepath = "/";
+}
+
 $(document).ready(function() {
 
 	// Initialize components.
