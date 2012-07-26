@@ -15,15 +15,39 @@ $(document).ready(function() {
  * Initialize all components.
  */
 function initComponents() {
-
+	
+	// Initialize components position.
+	initShellAuthenticateSize();
+	
 	// Add action listener.
 	addActionListener();
+}
+
+function initShellAuthenticateSize() {
+
+	$("#authentication .authContent")
+		.css("left", ($(window).width() - 600) / 2)
+		.css("top", ($(window).height() - 300) / 2);
 }
 
 /**
  * Add action listener.
  */
 function addActionListener() {
+	
+	// Header Shell clicked.
+	$("#shell").click(function() { $("#authentication").show(); });
+	
+	// Shell cancel button clicked.
+	$("#shellCancel").click(function() { $("#authentication").hide(); });
+	
+	// Shell authenticate button clicked.
+	$("#shellAuthenticate").click(function() {
+		console.log("AJAX~~~~");
+	});
+	
+	// Window resize.
+	$(window).resize(initShellAuthenticateSize);
 
 	// Navigator clicked.
 	$("body > nav li").click(navClickActionPerformed);

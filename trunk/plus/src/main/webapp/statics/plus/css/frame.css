@@ -168,6 +168,61 @@ section.content::-webkit-scrollbar-thumb:active {
 	background: rgba(0, 0, 255, 0.3);
 }
 
+section#authentication {
+	display: none;
+}
+
+section#authentication .authContent {
+	position: fixed;
+	width: 600px;
+	height: 300px;
+	background-color: black;
+	color: white;
+	border: 2px white solid;
+	box-shadow: 0 0 20px white;
+	display: block;
+	z-index: 29;
+	border-radius: 20px;
+	text-align: center;
+}
+
+section#authentication .authContent h2 {
+	margin: 20px;
+}
+
+section#authentication .authContent .password {
+	margin: 40px;
+}
+section#authentication .authContent .password a {
+	margin-right: 20px;
+	font-size: 18px;
+}
+section#authentication .authContent .password input[type=text] {
+	width: 50%;
+	padding: 8px;
+	border: 2px black solid;
+	border-radius: 15px;
+	outline: none;
+	box-shadow: 0px 0px 10px white;
+}
+section#authentication .authContent input[type=button] {
+	width: 150px;
+	height: 35px;
+	margin: 30px 20px 0px 20px;
+	font-weight: bold;
+	border: 1px silver solid;
+	border-radius: 20px;
+	color: white;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(black));
+}
+
+section#authentication .authContent input[type=button]:hover {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#222222));
+}
+section#authentication .authContent input[type=button]:active {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(#444444));
+}
+
 body>footer {
 	position: fixed;
 	left: 100px;

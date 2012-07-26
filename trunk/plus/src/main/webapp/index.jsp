@@ -16,7 +16,7 @@
 	<%-- Website header. --%>
 	<header>
 		<div class="quickLink">
-			<a class="active">Plus</a><a href="#">Lab</a>
+			<a class="active">Plus</a><a href="#">Lab</a><a id="shell" href="javascript:void(0);">Shell</a>
 		</div>
 	</header>
 	
@@ -92,6 +92,23 @@
 
 	<%-- Side bar section at right side. --%>
 	<section class="sidebar"></section>
+	
+	<section id="authentication">
+		<div class="authContent">
+			<h2>Authentication Required</h2>
+			<div>
+				Authentication is required to using web shell.
+			</div>
+			<div class="password">
+				<a>Password:</a><input type="text">
+			</div>
+			<div>
+				<input id="shellCancel" type="button" value="Cancel">
+				<input id="shellAuthenticate" type="button" value="Authenticate">
+			</div>
+		</div>
+		<div class="cover"></div>
+	</section>
 
 	<%-- Footer for copyright. --%>
 	<footer> Copyright © 2012 by Rainisic, Rain Rhyme Internet
