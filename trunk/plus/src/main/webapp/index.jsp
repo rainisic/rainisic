@@ -97,10 +97,6 @@
 	<footer> Copyright © 2012 by Rainisic, Rain Rhyme Internet
 		Studio. All rights reserved.</footer>
 
-	<script type="text/javascript">
-	var basepath = "http://localhost:8080/";
-	var subject = <s:property value="#request.subject"/>
-	</script>
 	<script type="text/javascript" src="<s:property value="#request.domain"/>/common/jquery/jquery.js"></script>
 	<script type="text/javascript" src="<s:property value="#request.domain"/>/plus/js/frame.js"></script>
 	<script type="text/javascript" src="<s:property value="#request.domain"/>/plus/js/blog.js"></script>
