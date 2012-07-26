@@ -96,11 +96,11 @@
 	<section id="authentication">
 		<div class="authContent">
 			<h2>Authentication Required</h2>
-			<div>
+			<div class="information">
 				Authentication is required to using web shell.
 			</div>
 			<div class="password">
-				<a>Password:</a><input type="text">
+				<a>Password:</a><input id="password" type="password">
 			</div>
 			<div>
 				<input id="shellCancel" type="button" value="Cancel">

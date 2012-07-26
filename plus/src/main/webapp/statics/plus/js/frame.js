@@ -23,6 +23,9 @@ function initComponents() {
 	addActionListener();
 }
 
+/**
+ * Initialize shell authenticate DIV.
+ */
 function initShellAuthenticateSize() {
 
 	$("#authentication .authContent")
@@ -36,15 +39,13 @@ function initShellAuthenticateSize() {
 function addActionListener() {
 	
 	// Header Shell clicked.
-	$("#shell").click(function() { $("#authentication").show(); });
+	$("#shell").click(function() { toggleShellAuthenticationView(true); });
 	
 	// Shell cancel button clicked.
-	$("#shellCancel").click(function() { $("#authentication").hide(); });
+	$("#shellCancel").click(function() { toggleShellAuthenticationView(false); });
 	
 	// Shell authenticate button clicked.
-	$("#shellAuthenticate").click(function() {
-		console.log("AJAX~~~~");
-	});
+	$("#shellAuthenticate").click(authenticateClickActionPerformed);
 	
 	// Window resize.
 	$(window).resize(initShellAuthenticateSize);
@@ -98,6 +99,49 @@ function navClickActionPerformed() {
 	}
 }
 
+/**
+ * Authenticate button click action.
+ */
+function authenticateClickActionPerformed() {
+	
+	// Send data to server for authenticate.
+	$.ajax({
+		url:		basepath + "ajax/shell/authenticate",
+		data:		"password=" + $("#password").val(),
+		type:		"get",
+		cache:		false,
+		dataType:	"json",
+		success:	function(data) {
+			
+			if (data.result == "right") {
+
+				// Redirect to shell.
+				window.location.href = basepath + "shell";
+			} else {
+				
+				// Show the hint info.
+				$("#authentication .authContent .information").addClass("error");
+				$("#authentication .authContent .information").text("Sorry, that's didn't work. Please try again.");
+			}
+			
+		}
+	});
+}
+
+/**
+ * Toggle shell authentication view.
+ * @param show
+ */
+function toggleShellAuthenticationView(show) {
+	
+	if (show) {
+		$("#authentication").show();
+	} else {
+		$("#authentication").hide();
+		$("#authentication .authContent .information").removeClass("error");
+		$("#authentication .authContent .information").text("Authentication is required to using web shell.");
+	}
+}
 
 /**
  * Rewrite the URL.
