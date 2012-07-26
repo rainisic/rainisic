@@ -27,10 +27,25 @@
 			<result type="dispatcher">/index.jsp</result>
 		</action>
 
+		<!-- Home -->
+		<action name="home">
+			<result type="dispatcher">/index.jsp</result>
+		</action>
+		
 		<!-- Blog -->
 		<action name="blog" class="com.rainisic.plus.action.ArticleAction"
 			method="list">
 			<result>/index.jsp</result>
+		</action>
+		
+		<!-- About -->
+		<action name="about">
+			<result type="redirect">/index</result>
+		</action>
+		
+		<!-- Shell -->
+		<action name="shell">
+			<result>/shell.jsp</result>
 		</action>
 	</package>
 
@@ -64,6 +79,12 @@
 		</action>
 		<action name="category_*" class="com.rainisic.plus.action.CategoryAction"
 			method="{1}">
+			<result name="success" type="json" />
+		</action>
+	</package>
+
+	<package name="ajax-shell" extends="ajax-default" namespace="/ajax/shell">
+		<action name="authenticate" class="com.rainisic.plus.action.AuthenticateAction">
 			<result name="success" type="json" />
 		</action>
 	</package>
