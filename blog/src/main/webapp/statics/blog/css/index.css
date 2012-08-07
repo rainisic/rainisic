@@ -1,0 +1,149 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("default.css");
+
+.sectionName {
+	font-size: 24px;
+	border-bottom: 1px black solid;
+	text-shadow: 1px 1px 1px lightgray;
+	font-weight: bold;
+}
+
+section.search {
+	text-align: left;
+}
+
+section.article {
+	text-align: left;
+}
+
+section.article .page {
+	margin: 10px;
+	text-align: right;
+}
+
+section.article .page a {
+	margin: 0px 5px;
+	text-align: center;
+	color: black;
+}
+
+section.article .page a:link {
+	text-decoration: none;
+}
+
+section.article .page a:link:hover {
+	color: red;
+}
+
+.articles {
+	width: 888px;
+	margin: 20px auto;
+}
+
+.articles:after {
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+article.article {
+	position: relative;
+	width: 400px;
+	height: 225px;
+	padding: 10px 20px;
+	float: left;
+	border: 1px silver solid;
+	background-color: white;
+	cursor: pointer;
+	transition: all 200ms ease-in-out 0s;
+	-moz-transition: all 200ms ease-in-out 0s;
+	-webkit-transition: all 200ms ease-in-out 0s;
+	-o-transition: all 200ms ease-in-out 0s;
+	transition: all 200ms ease-in-out 0s;
+}
+
+article.article:nth-child(4n) {
+	background-color: #FFEEEE;
+}
+
+article.article:nth-child(4n + 1) {
+	background-color: #FFFFEE;
+}
+
+article.article:nth-child(4n + 2) {
+	background-color: #EEFFEE;
+}
+
+article.article:nth-child(4n + 3) {
+	background-color: #EEEEFF;
+}
+
+article.article:hover {
+	z-index: 1;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+
+article.article header {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+article.article section.summary {
+	height: 120px;
+	margin: 10px 0px;
+	text-indent: 2em;
+	letter-spacing: 2px;
+	text-indent: 2em;
+	margin: 10px 0px;
+}
+
+article.article .category {
+	margin: 10px 0px;
+	text-shadow: 2px 1px 3px lightgray;
+}
+
+article.article .category label {
+	padding: 0px 10px;
+}
+
+article.article .category a {
+	text-decoration: none;
+	color: blue;
+}
+
+article.article .tags {
+	text-shadow: 2px 1px 3px lightgray;
+}
+
+article.article .tags label {
+	padding: 0px 10px;
+}
+
+article.article .tags a {
+	margin: 0px 5px;
+	text-decoration: none;
+	color: #FF5555;
+}
+
+article.article footer {
+	font-size: 11px;
+	color: gray;
+	text-align: right;
+	text-shadow: 1px 1px 3px lightgray;
+}
+

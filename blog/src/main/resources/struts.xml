@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+
+	<!-- Default actions. -->
+	<package name="default" extends="struts-default" namespace="/">
+
+		<!-- Define custom interceptor stack. -->
+		<interceptors>
+			<interceptor name="environment"
+				class="com.rainisic.blog.interceptor.EnvironmentInterceptor" />
+			<interceptor-stack name="customStack">
+				<interceptor-ref name="environment" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<!-- Default interceptor stack. -->
+		<default-interceptor-ref name="customStack" />
+		
+		<action name="index" class="com.rainisic.blog.action.ArticleAction" method="list">
+			<result name="success" type="dispatcher">index.jsp</result>
+		</action>
+		
+		<action name="create" class="com.rainisic.blog.action.CategoryAction" method="list">
+			<result name="success" type="dispatcher">edit.jsp</result>
+		</action>
+		
+		<action name="publish" class="com.rainisic.blog.action.ArticleAction" method="publish">
+			<result name="success" type="dispatcher">display.jsp</result>
+		</action>
+		
+		<action name="display" class="com.rainisic.blog.action.ArticleAction" method="display">
+			<result name="success" type="dispatcher">display.jsp</result>
+		</action>
+		
+	</package>
+</struts>
