@@ -12,7 +12,10 @@ html,body {
 	padding: 0px;
 	text-align: center;
 	font-size: 13px;
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(#DDDDFF), to(#EEEEFF)) fixed;
+	background: -webkit-linear-gradient(#DDDDFF, #EEEEFF) fixed;
+	background: -moz-linear-gradient(#DDDDFF, #EEEEFF) fixed;
+	background: -o-linear-gradient(#DDDDFF, #EEEEFF) fixed;
+	background: -ms-linear-gradient(#DDDDFF, #EEEEFF) fixed;
 }
 
 section.main {

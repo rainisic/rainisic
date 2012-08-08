@@ -2,11 +2,11 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
-<jsp:include page="include/header.jsp"/>
+<s:include value="include/header.jsp"/>
 <link rel="stylesheet" type="text/css" href="<s:property value="#request.domain"/>/blog/css/edit.css">
 <link rel="stylesheet" type="text/css" href="<s:property value="#request.domain"/>/common/jquery/jquery-ui.css">
-<jsp:include page="include/body.jsp"/>
-<jsp:include page="include/navigator.jsp"/>
+<s:include value="include/body.jsp"/>
+<s:include value="include/navigator.jsp"/>
 
 	<form action="publish" method="post">
 		<p>
@@ -47,7 +47,7 @@
 		<p></p>
 	</div>
 	
-<jsp:include page="include/footer.jsp"/>
+<s:include value="include/footer.jsp"/>
 <script type="text/javascript" src="<s:property value="#request.domain"/>/common/jquery/jquery.js"></script>
 <script type="text/javascript" src="<s:property value="#request.domain"/>/common/jquery/jquery-ui.js"></script>
 <script type="text/javascript" src="<s:property value="#request.domain"/>/common/tiny_mce/tiny_mce.js"></script>
