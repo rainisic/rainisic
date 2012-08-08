@@ -21,22 +21,42 @@
 
 		<!-- Default interceptor stack. -->
 		<default-interceptor-ref name="customStack" />
-		
-		<action name="index" class="com.rainisic.blog.action.ArticleAction" method="list">
+	</package>
+
+	<package name="ajax-default" extends="json-default" namespace="/ajax">
+		<action name="*_*" class="com.rainisic.blog.action.{1}Action"
+			method="{2}">
+			<result name="stream" type="stream">
+				<param name="contentType">text</param>
+				<param name="inputName">inputStream</param>
+			</result>
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<package name="normal-request" extends="default" namespace="/">
+
+		<!-- Index -->
+		<action name="index" class="com.rainisic.blog.action.ArticleAction"
+			method="list">
 			<result name="success" type="dispatcher">index.jsp</result>
 		</action>
-		
-		<action name="create" class="com.rainisic.blog.action.CategoryAction" method="list">
+
+
+		<!-- Article -->
+		<action name="create" class="com.rainisic.blog.action.CategoryAction"
+			method="list">
 			<result name="success" type="dispatcher">edit.jsp</result>
 		</action>
-		
-		<action name="publish" class="com.rainisic.blog.action.ArticleAction" method="publish">
+
+		<action name="publish" class="com.rainisic.blog.action.ArticleAction"
+			method="publish">
 			<result name="success" type="dispatcher">display.jsp</result>
 		</action>
-		
-		<action name="display" class="com.rainisic.blog.action.ArticleAction" method="display">
+
+		<action name="display" class="com.rainisic.blog.action.ArticleAction"
+			method="display">
 			<result name="success" type="dispatcher">display.jsp</result>
 		</action>
-		
 	</package>
 </struts>
